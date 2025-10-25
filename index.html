@@ -6,19 +6,17 @@
     <link rel="stylesheet" href="src/output.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-slate-500 to-slate-600">
     <header
       id="#Top"
-      class="fixed top-0 left-0 w-full bg-white shadow-md text-center p-5 md:bg-amber-300 lg:bg-amber-950 xl:bg-amber-100"
+      class="fixed top-0 left-0 w-full bg-white shadow-md text-center p-3 bg-gradient-to-r from-slate-500 to-slate-300"
     >
       <h1 class="text-3xl font-bold">CHAPTER 2</h1>
       <h1 class="text-xl">SOFTWARE PROCESS</h1>
-      <h1 class="pt-3">TOPICS</h1>
+      <h1 class="pt-3 ">TOPICS</h1>
 
-      <nav
-        class="flex justify-center gap-7 text-lg pt-3 pl-15 pr-15 md:pl-6 md:pr-6 lg:gap-7 xl:gap-23"
-      >
-        <a href="#part1">Introduction</a>
+      <nav class="nav">
+        <a class="link" href="#part1">Introduction</a>
         <a class="link" href="#part2">Software process model</a>
         <a class="link" href="#part3">Process activities</a>
         <a class="link" href="#part4">Coping with change</a>
@@ -27,14 +25,14 @@
     </header>
 
     <main>
-      <section class="p-5">
-        <!-- <aside class="p-3 fixed ml-335 mt-155 bg-amber-950 text-amber-100 rounded-2xl">
-          <a href="#Top">↑ Back to top
+      <section class="p-5 pb-2">
+        <!-- <aside class="p-3 fixed ml-100 mt-150 rounded-2xl text-sm md:ml-160 md:mt-150 bg-linear-to-r from-slate-500 to-slate-600">
+          <a href="#Top">↑ up
         </aside> -->
 
         <article
           id="part1"
-          class="bg-ivory-500 scroll-mt-80 parts mt-63 md:mt-50 lg:mt-45 xl:mt-45"
+          class="bg-ivory-500 scroll-mt-80 parts mt-63 md:mt-50 md:scroll-mt-90 lg:mt-45 xl:mt-45"
         >
           <h2 class="border rounded-2xl shadow-lg p-4 mb-5 w-full text-center">
             WHAT IS SOFTWARE PROCESS
@@ -1696,7 +1694,11 @@
       </section>
     </main>
 
-    <footer class="flex justify-center items-center text-center gap-15 p-5 ml-3 mr-3 mb-2 border rounded-2xl md:gap-30 lg:gap-50 xl:gap-80 ">
+    <footer
+      class="flex justify-center items-center text-center gap-15 p-5 ml-3 mr-3 mb-2 border border-white rounded-2xl md:gap-30 lg:gap-50 xl:gap-80 
+            transition-colors duration-300
+         hover:bg-blue-50 hover:border-blue-400 hover:shadow-blue-500/50;"
+    >
       <section class="flex flex-col gap-2">
         <h1 class="text-xl bold italic">Chapter 2</h1>
         <h1>SOFTWARE PROCESS</h1>
@@ -1709,10 +1711,10 @@
       <section class="flex flex-col gap-2">
         <h3 class="text-xl italic">Contents</h3>
         <a href="#part1">Introduction</a>
-        <a class="link" href="#part2">Software process model</a>
-        <a class="link" href="#part3">Process activities</a>
-        <a class="link" href="#part4">Coping with change</a>
-        <a class="link" href="#part5">The Rational Unified Process</a>
+        <a href="#part2">Software process model</a>
+        <a href="#part3">Process activities</a>
+        <a href="#part4">Coping with change</a>
+        <a href="#part5">The Rational Unified Process</a>
       </section>
     </footer>
   </body>
