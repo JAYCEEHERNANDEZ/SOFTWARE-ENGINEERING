@@ -24,7 +24,15 @@
   @apply p-5 m-10 border rounded-2xl shadow-lg shadow-black;
 }
 .paragraph {
-  @apply mb-2 p-2 text-justify;
+  @apply mb-2 p-2 text-justify text-sm md:text-lg lg:text-lg xl:text-lg;
+}
+
+.ollist{
+  @apply p-5 mb-5 text-sm md:text-lg lg:text-lg xl:text-lg border rounded-2xl shadow-lg shadow-black
+}
+
+.ol{
+  @apply p-3 text-sm md:text-lg lg:text-lg xl:text-lg border-t;
 }
 .subtopic {
   @apply text-2xl font-bold mb-4 mt-6;
