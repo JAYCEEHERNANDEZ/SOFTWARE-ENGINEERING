@@ -5,7 +5,7 @@
 }
 
 .link {
-  @apply bg-blue-300 border border-black text-black rounded-xl p-2
+  @apply  border-black text-black rounded-xl p-2
          hover:bg-blue-600 hover:text-white hover:shadow-lg hover:shadow-blue-500/40 
          transition-all duration-300;
 }
@@ -17,23 +17,29 @@
 }
 
 .Topic{
-  @apply  bg-blue-300 text-black border rounded-2xl shadow-lg p-4 mb-5 w-full text-center
+  @apply  bg-blue-300 text-black rounded-2xl shadow-sm shadow-black p-4 mb-5 w-full text-center
 }
 
 .figure {
-  @apply p-5 m-10 border rounded-2xl shadow-lg shadow-black;
+  @apply p-5 m-10  rounded-2xl shadow-lg shadow-blue-400;
 }
 .paragraph {
   @apply mb-2 p-2 text-justify text-sm md:text-lg lg:text-lg xl:text-lg;
 }
 
 .ollist{
-  @apply p-5 mb-5 text-sm md:text-lg lg:text-lg xl:text-lg border rounded-2xl shadow-lg shadow-black
+  @apply p-5 mb-5 text-sm md:text-lg lg:text-lg xl:text-lg rounded-2xl shadow-lg shadow-blue-400
 }
 
 .ol{
-  @apply p-3 text-sm md:text-lg lg:text-lg xl:text-lg border-t;
+  @apply p-3 text-sm md:text-lg lg:text-lg xl:text-lg border-t list-decimal;
 }
 .subtopic {
   @apply text-2xl font-bold mb-4 mt-6;
+}
+
+.footer{
+  @apply flex justify-center items-center text-sm md:text-lg lg:text-lg xl:text-lg text-center gap-15 p-5 ml-3 mr-3 mb-2 border border-white rounded-2xl md:gap-30 lg:gap-50 xl:gap-80 
+            transition-colors duration-300
+         hover:bg-blue-50 hover:border-blue-400 hover:shadow-blue-500/50
 }
