@@ -8,7 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-50: oklch(97% 0.014 254.604);
-    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -243,6 +243,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .scroll-smooth {
     scroll-behavior: smooth;
   }
@@ -379,7 +382,9 @@
 .nav {
   display: flex;
   justify-content: center;
-  gap: calc(var(--spacing) * 7);
+  gap: calc(var(--spacing) * 5);
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
   padding-top: calc(var(--spacing) * 3);
   padding-right: calc(var(--spacing) * 16);
   padding-left: calc(var(--spacing) * 16);
@@ -492,7 +497,7 @@
   margin-bottom: calc(var(--spacing) * 5);
   width: 100%;
   border-radius: var(--radius-2xl);
-  background-color: var(--color-blue-300);
+  background-color: var(--color-blue-200);
   padding: calc(var(--spacing) * 4);
   text-align: center;
   color: var(--color-black);
@@ -762,14 +767,14 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-duration {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -799,8 +804,8 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-duration: initial;
       --tw-border-style: solid;
+      --tw-duration: initial;
     }
   }
 }

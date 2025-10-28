@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .nav {
-  @apply flex justify-center gap-7 text-sm pt-3 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
+  @apply flex justify-center border-t gap-5 text-sm pt-3 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
 }
 
 .link {
@@ -17,7 +17,7 @@
 }
 
 .Topic{
-  @apply  bg-blue-300 text-black rounded-2xl shadow-sm shadow-black p-4 mb-5 w-full text-center
+  @apply  bg-blue-200 text-black rounded-2xl shadow-sm shadow-black p-4 mb-5 w-full text-center
 }
 
 .figure {
