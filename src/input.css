@@ -29,3 +29,15 @@
 .subtopic {
   @apply text-2xl font-bold mb-4 mt-6;
 }
+
+/* marco  */
+
+.sec1{
+  @apply shadow-black shadow-lg text-center  p-3 ml-4 mr-4 md:m-10 lg:ml-24 
+  lg:mr-24 xl:ml-40 xl:pr-35 rounded-2xl  bg-[#F5E5E1] text-base font-mono sm:pb-10 mb-9 mt-80
+}
+
+.sec{
+  @apply shadow-black shadow-lg text-center  p-3 ml-4 mr-4 md:m-10 lg:ml-24 
+  lg:mr-24 xl:ml-40 xl:pr-35 rounded-2xl  bg-[#F5E5E1] text-base font-mono sm:pb-10 mb-9 mt-10
+}
