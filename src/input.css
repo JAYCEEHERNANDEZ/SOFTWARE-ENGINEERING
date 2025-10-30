@@ -7,26 +7,26 @@
   @apply  flex pl-20 p-5 border-b border-blue-200 gap-5
 }
 .Lmainsection{
-  @apply max-w-6xl mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20
+  @apply max-w-350 mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20
 }
 .Lsection{
-  @apply bg-white p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300
+  @apply bg-white/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300
 }
 .LH{
-  @apply text-lg font-semibold text-blue-700 mb-2 group-hover:text-blue-800 transition-colors
+  @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800 transition-colors
 }
 .Lparagraph{
-  @apply text-sm text-gray-600 bg-blue-50 border border-blue-100 rounded-lg p-3 mb-4
+  @apply text-sm text-gray-600 bg-white/50  border-blue-100 rounded-lg p-3 mb-4
 }
 
 /* Jaycee src */
 
 .nav {
-  @apply bg-gradient-to-b from-blue-50  w-full mt-2 flex justify-center gap-3 text-sm pt-3 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
+  @apply bg-gradient-to-b from-blue-50  w-full mt-2 flex justify-center gap-5 text-sm pt-3 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
 }
 
 .link {
-  @apply  border-black text-black font-bold rounded-xl p-2 font-normal
+  @apply text-black rounded-xl p-2 font-normal
          hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
 }
 
@@ -55,7 +55,7 @@
   @apply p-3 text-sm md:text-lg lg:text-lg xl:text-lg border-t list-decimal border-dashed;
 }
 .listcontainer{
-  @apply text-center p-3 text-sm md:text-lg lg:text-lg xl:text-lg shadow-lg shadow-blue-200 rounded-2xl
+  @apply  text-center p-3 text-sm md:text-lg lg:text-lg xl:text-lg shadow-lg shadow-blue-200 rounded-2xl
 }
 .subtopic {
   @apply text-2xl font-bold mb-4 mt-6;
