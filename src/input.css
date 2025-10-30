@@ -66,3 +66,13 @@
         transition-colors duration-300
          hover:bg-blue-50 hover:border-blue-400 hover:shadow-blue-500/50
 }
+
+/* Kylieeee SRC */
+
+.pgraph{
+  @apply ml-15 mr-15 mt-15 text-justify;
+}
+
+.bullet{
+  @apply mt-5 mr-10 ml-20 text-justify;
+}
