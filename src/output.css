@@ -5,7 +5,6 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-50: oklch(97% 0.014 254.604);
@@ -39,6 +38,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --tracking-wider: 0.05em;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -251,17 +251,20 @@
   .hidden {
     display: none;
   }
-  .h-24 {
-    height: calc(var(--spacing) * 24);
-  }
   .h-35 {
     height: calc(var(--spacing) * 35);
   }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
+  .h-45 {
+    height: calc(var(--spacing) * 45);
   }
   .w-35 {
     width: calc(var(--spacing) * 35);
+  }
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
   }
   .w-full {
     width: 100%;
@@ -391,11 +394,11 @@
   .text-center {
     text-align: center;
   }
+  .font-\[\'Bitcoint_Grid_Single\'\] {
+    font-family: 'Bitcoint Grid Single';
+  }
   .font-sans {
     font-family: var(--font-sans);
-  }
-  .font-serif {
-    font-family: var(--font-serif);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -425,11 +428,12 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
   .text-black {
     color: var(--color-black);
-  }
-  .text-blue-600 {
-    color: var(--color-blue-600);
   }
   .text-blue-700 {
     color: var(--color-blue-700);
@@ -511,16 +515,6 @@
       margin-top: calc(var(--spacing) * 48);
     }
   }
-  .md\:mt-50 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 50);
-    }
-  }
-  .md\:mt-58 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 58);
-    }
-  }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
@@ -547,24 +541,9 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
-  .lg\:mt-40 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 40);
-    }
-  }
   .lg\:mt-43 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 43);
-    }
-  }
-  .lg\:mt-48 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 48);
-    }
-  }
-  .lg\:mt-50 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 50);
     }
   }
   .lg\:block {
@@ -588,24 +567,9 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
-  .xl\:mt-41 {
-    @media (width >= 80rem) {
-      margin-top: calc(var(--spacing) * 41);
-    }
-  }
   .xl\:mt-42 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * 42);
-    }
-  }
-  .xl\:mt-43 {
-    @media (width >= 80rem) {
-      margin-top: calc(var(--spacing) * 43);
-    }
-  }
-  .xl\:mt-48 {
-    @media (width >= 80rem) {
-      margin-top: calc(var(--spacing) * 48);
     }
   }
   .xl\:block {
@@ -624,6 +588,10 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+}
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/fonts/MyCustomFont.woff2') format('woff2');
 }
 .Lheader {
   display: flex;
@@ -714,7 +682,7 @@
   padding: calc(var(--spacing) * 3);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  color: var(--color-gray-600);
+  color: var(--color-black);
 }
 .nav {
   margin-top: calc(var(--spacing) * 2);
@@ -1072,6 +1040,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1170,6 +1142,7 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

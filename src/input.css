@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/fonts/MyCustomFont.woff2') format('woff2');
+}
 
 /* Landing page */
 
@@ -16,7 +20,7 @@
   @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800 transition-colors
 }
 .Lparagraph{
-  @apply text-sm text-gray-600 bg-white/50  border-blue-100 rounded-lg p-3 mb-4
+  @apply text-sm text-black bg-white/50 border-blue-100 rounded-lg p-3 mb-4
 }
 
 /* Jaycee src */
