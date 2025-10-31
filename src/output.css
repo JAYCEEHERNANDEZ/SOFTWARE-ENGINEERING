@@ -236,8 +236,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-60 {
-    margin-top: calc(var(--spacing) * 60);
+  .mt-54 {
+    margin-top: calc(var(--spacing) * 54);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -506,6 +506,16 @@
       }
     }
   }
+  .md\:mt-48 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 48);
+    }
+  }
+  .md\:mt-50 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 50);
+    }
+  }
   .md\:mt-58 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 58);
@@ -537,6 +547,21 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .lg\:mt-40 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:mt-43 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 43);
+    }
+  }
+  .lg\:mt-48 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 48);
+    }
+  }
   .lg\:mt-50 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 50);
@@ -561,6 +586,21 @@
     @media (width >= 64rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .xl\:mt-41 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 41);
+    }
+  }
+  .xl\:mt-42 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 42);
+    }
+  }
+  .xl\:mt-43 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 43);
     }
   }
   .xl\:mt-48 {
@@ -686,7 +726,7 @@
   background-image: linear-gradient(var(--tw-gradient-stops));
   --tw-gradient-from: var(--color-blue-50);
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  padding-top: calc(var(--spacing) * 3);
+  padding-top: calc(var(--spacing) * 1);
   padding-right: calc(var(--spacing) * 16);
   padding-left: calc(var(--spacing) * 16);
   font-size: var(--text-sm);

@@ -22,7 +22,7 @@
 /* Jaycee src */
 
 .nav {
-  @apply bg-gradient-to-b from-blue-50  w-full mt-2 flex justify-center gap-5 text-sm pt-3 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
+  @apply bg-gradient-to-b from-blue-50  w-full mt-2 flex justify-center gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
 }
 
 .link {
@@ -32,7 +32,7 @@
 
 .parts {
   @apply  bg-blue-100 border-gray-300 mb-10 p-5 pt-3 rounded-2xl shadow-lg shadow-black 
-         transition-colors duration-300 
+         transition-colors duration-300
          hover:bg-gradient-to-b from-blue-50 hover:border-blue-400 hover:shadow-blue-500/50;
 }
 
