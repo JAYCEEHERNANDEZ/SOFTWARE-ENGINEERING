@@ -1,72 +1,73 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('/fonts/MyCustomFont.woff2') format('woff2');
-}
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Landing page */
 
-.Lheader{
-  @apply  flex pl-20 p-5 border-b border-blue-200 gap-5
+.Lheader {
+  @apply flex pl-20 p-5 border-b border-blue-200 gap-5;
 }
-.Lmainsection{
-  @apply max-w-350 mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20
+
+.Lmainsection {
+  @apply max-w-350 mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20;
 }
-.Lsection{
-  @apply bg-white/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300
+
+.Lsection {
+  @apply bg-white/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
 }
-.LH{
-  @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800 transition-colors
+
+.LH {
+  @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800 transition-colors;
 }
-.Lparagraph{
-  @apply text-sm text-black bg-white/50 border-blue-100 rounded-lg p-3 mb-4
+
+.Lparagraph {
+  @apply text-sm text-black bg-white/50 border-blue-100 rounded-lg p-3 mb-4;
 }
 
 /* Jaycee src */
 
 .nav {
-  @apply bg-gradient-to-b from-blue-50  w-full mt-2 flex justify-center gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
+  @apply bg-gradient-to-b from-blue-50 font-[Bitcoint_Grid_Single] w-full mt-2 flex justify-center gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
 }
 
 .link {
   @apply text-black rounded-xl p-2 font-normal
-         hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
+        hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
 }
 
 .parts {
-  @apply  bg-blue-100 border-gray-300 mb-10 p-5 pt-3 rounded-2xl shadow-lg shadow-black 
-         transition-colors duration-300
-         hover:bg-gradient-to-b from-blue-50 hover:border-blue-400 hover:shadow-blue-500/50;
+  @apply bg-white/70 font-[Mono] mb-10 p-5 pt-3 rounded-2xl shadow-2xl shadow-black;
 }
 
-.Topic{
-  @apply bg-gradient-to-b from-blue-300 text-xl font-bold text-blue-700 font-sans rounded-2xl shadow-sm shadow-black p-4 mb-5 w-full text-center
+.Topic {
+  @apply bg-gradient-to-b from-blue-300 text-xl font-bold text-blue-700 font-sans rounded-2xl shadow-sm shadow-black p-4 mb-5 w-full text-center;
 }
 
 .figure {
-  @apply p-5 m-10  rounded-2xl shadow-lg shadow-blue-400;
+  @apply p-5 m-10  rounded-2xl shadow-lg shadow-blue-200;
 }
+
 .paragraph {
   @apply mb-2 p-2 text-justify text-sm md:text-lg lg:text-lg xl:text-lg;
 }
 
-.ollist{
-  @apply p-5 mb-5 text-sm md:text-lg lg:text-lg xl:text-lg rounded-2xl shadow-lg shadow-blue-400
+.ollist {
+  @apply p-5 mb-5 text-sm md:text-lg lg:text-lg xl:text-lg rounded-2xl shadow-lg shadow-blue-200;
 }
 
-.ol{
+.ol {
   @apply p-3 text-sm md:text-lg lg:text-lg xl:text-lg border-t list-decimal border-dashed;
 }
-.listcontainer{
-  @apply  text-center p-3 text-sm md:text-lg lg:text-lg xl:text-lg shadow-lg shadow-blue-200 rounded-2xl
+
+.listcontainer {
+  @apply text-center p-3 text-sm md:text-lg lg:text-lg xl:text-lg shadow-lg shadow-blue-200 rounded-2xl
+  hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 transition-all duration-300;
 }
+
 .subtopic {
   @apply text-2xl font-bold mb-4 mt-6;
 }
 
-.footerSection1{
-  @apply bg-gradient-to-b from-blue-400 to-blue-100 flex justify-center items-center text-sm md:text-lg lg:text-lg xl:text-lg text-center gap-5 p-5 ml-3 mr-3 mb-2 rounded-2xl md:gap-30 lg:gap-30 xl:gap-40
-        transition-colors duration-300
-         hover:bg-blue-50 hover:border-blue-400 hover:shadow-blue-500/50
+.footerSection1 {
+  @apply bg-gradient-to-b from-blue-300 to-blue-100 flex justify-center items-center text-sm md:text-lg lg:text-lg xl:text-lg text-center gap-5 p-5 ml-3 mr-3 mb-2 rounded-2xl md:gap-30 lg:gap-30 xl:gap-40;
 }
