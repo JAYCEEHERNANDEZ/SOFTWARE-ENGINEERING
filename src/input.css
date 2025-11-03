@@ -69,6 +69,8 @@
 
 /* Kylieeee SRC */
 
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+
 .article{
   @apply bg-white/20 text-left sm:mr-4 ml-4 lg:mr-4 ml-4 mt-5 mb-5 p-10 rounded-lg;
 }
@@ -78,7 +80,7 @@
 }
 
 .pgraph{
-  @apply text-base/8 indent-8 md:mr-7 ml-3 mt-5 lg:text-xl ml-10 mr-10 mt-5 text-justify;
+  @apply text-base/8 text-sm/8 indent-8 md:mr-7 ml-3 mt-5 lg:text-xl ml-10 mr-10 mt-5 text-justify;
 }
 
 .bullet{
@@ -96,3 +98,4 @@
 .figcaption{
   @apply  italic text-sm md:text-lg lg:text-lg xl:text-lg text-center mt-3;
 }
+
