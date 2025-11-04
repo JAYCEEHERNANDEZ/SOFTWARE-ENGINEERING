@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
-    <title>Document</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Chapter 2</title>
   </head>
   <body class="bg-[#0C2B4E] font-serif">
-    <header id="#Top" class="fixed top-0 left-0 w-full shadow-md text-center p-3 pl-0 pr-0 bg-gradient-to-b from-blue-400 to-blue-100 z-50">
-
+    <header
+      class="fixed top-0 left-0 w-full shadow-md text-center pt-3 pl-0 pr-0 bg-gradient-to-b from-blue-400 to-blue-100 z-50"
+    >
       <a href="index.html">
-        <div class="fixed flex gap-2 p-3 pb-1 pt-1 m-5 mt-1 rounded-2xl
-        hover:-translate-y-2 hover:border-blue-500 border  transition-all duration-300">
-          <img src="Pictures/arrow.png" alt="" width="15px" height="7px"> 
+        <div
+          class="fixed flex gap-2 p-3 pb-1 pt-1 m-5 mt-1 rounded-2xl hover:-translate-y-2 hover:border-blue-500 border transition-all duration-300"
+        >
+          <img src="Pictures/arrow.png" alt="" width="15px" height="7px"/>
           <h1>back</h1>
         </div>
       </a>  
@@ -23,10 +27,17 @@
             <h1 class="text-3xl font-bold">SOFTWARE PROCESS</h1>
         </div>
         <h1 class="pt-3 font-semibold text-gray-800 ">TOPICS</h1>
+      </a>
 
-      <!-- JAYCEE Hernandez -->
+      <div class="gap-5 text-center">
+        <h1 class="text-3xl font-bold text-black font-sans">CHAPTER 2</h1>
+        <h1 class="text-3xl font-bold">SOFTWARE PROCESS</h1>
+      </div>
+      <h1 class="pt-3 font-semibold text-gray-800">TOPICS</h1>
 
-      <nav class="nav"> 
+      <!-- JAYCEE HERNANDEZ -->
+
+      <nav class="nav">
         <a class="link" href="#part1">Introduction</a>
         <a class="link" href="#part2">Software process model</a>
         <a class="link" href="#part3">Process activities</a>
@@ -36,18 +47,19 @@
     </header>
 
     <main>
-      <section class="p-10 pt-5 pb-2">
-        <!-- <aside class="p-3 fixed ml-100 mt-150 rounded-2xl text-sm md:ml-160 md:mt-150 bg-linear-to-r from-slate-500 to-slate-600">
-          <a href="#Top">↑ up
-        </aside> -->
 
+      <a href="#part1" class="fixed flex gap-2 ml-70 rounded-2xl bg-gradient-to-b from-blue-400 to-blue-100 mt-165 p-1.5 right-9
+      hover:-translate-y-2 hover:border-blue-500 transition-all duration-300">
+        <img src="Pictures/button.png" alt="" width="22px" height="20px">
+        <h1>back to top</h1>
+      </a>
+
+      <section class="p-8 pt-5 pb-2">
         <article
           id="part1"
-          class="bg-ivory-500 scroll-mt-80 parts mt-60 md:mt-58 lg:mt-50 xl:mt-48 w-full"
+          class="bg-ivory-500 scroll-mt-80 parts mt-54 md:mt-48 lg:mt-43 xl:mt-42 w-full"
         >
-          <h2 class="Topic">
-            WHAT IS SOFTWARE PROCESS
-          </h2>
+          <h2 class="Topic">WHAT IS SOFTWARE PROCESS</h2>
 
           <p class="paragraph">
             A software process is a set of related activities that leads to the
@@ -61,40 +73,48 @@
           </p>
 
           <div class="ollist">
-
             <h1 class="mb-3 text-sm md:text-lg lg:text-lg xl:text-lg">
-                    There are many different software processes but all must include
-                    four activities that are fundamental to software engineering:
+              There are many different software processes but all must include
+              four activities that are fundamental to software engineering:
             </h1>
 
-            <div  class="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 md:grid-cols-2 text-center gap-2 ol">
- 
+            <div
+              class="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 md:grid-cols-2 text-center gap-2 ol"
+            >
               <div class="listcontainer">
-                <h1 class="borde p-5"><strong>Software Specification</strong></h1>
-                <p class="paragraph">The functionality of the software and
-                        constraints on its operation must be defined.</p>
+                <h1 class="borde p-5">
+                  <strong>Software Specification</strong>
+                </h1>
+                <p class="paragraph">
+                  The functionality of the software and constraints on its
+                  operation must be defined.
+                </p>
               </div>
-              
+
               <div class="listcontainer">
-                <h1 class="borde p-5"><strong>Software design and implementation</strong></h1>
-                <p class="paragraph"> The software to meet the
-                        specification must be produced.</p>
+                <h1 class="borde p-5">
+                  <strong>Software design and implementation</strong>
+                </h1>
+                <p class="paragraph">
+                  The software to meet the specification must be produced.
+                </p>
               </div>
 
               <div class="listcontainer">
                 <h1 class="borde p-5"><strong>Software validation</strong></h1>
-                <p class="paragraph"> The software must be validated to ensure that
-                        it does what the customer wants.</p>
+                <p class="paragraph">
+                  The software must be validated to ensure that it does what the
+                  customer wants.
+                </p>
               </div>
 
-              <div class="text-center p-3 text-sm md:text-lg lg:text-lg xl:text-lg shadow-lg shadow-blue-200 rounded-2xl"">
+              <div class="listcontainer">
                 <h1 class="borde p-5"><strong>Software evolution</strong></h1>
-                <p class="paragraph"> The software must evolve to meet changing
-                        customer needs.</p>
+                <p class="paragraph">
+                  The software must evolve to meet changing customer needs.
+                </p>
               </div>
-
             </div>
-
           </div>
 
           <p class="paragraph">
@@ -107,39 +127,37 @@
           </p>
 
           <div class="ollist">
-
             <p class="paragraph">
-                When we describe and discuss processes, we usually talk about the
-                activities in these processes such as specifying a data model,
-                designing a user interface, etc., and the ordering of these
-                activities. However, as well as activities, process descriptions may
-                also include:
+              When we describe and discuss processes, we usually talk about the
+              activities in these processes such as specifying a data model,
+              designing a user interface, etc., and the ordering of these
+              activities. However, as well as activities, process descriptions
+              may also include:
             </p>
 
             <ol class="ol">
-                <li>
-                <strong>Products</strong>, which are the outcomes of a process activity. For
-                example, the outcome of the activity of architectural design may
-                be a model of the software architecture.
-                </li>
-                <li>
-                <strong>Roles</strong>, which reflect the responsibilities of the people involved
-                in the process. Examples of roles are project manager,
-                configuration manager, programmer, etc.
-                </li>
-                <li>
-                <strong>Pre- and post-conditions</strong>, which are statements that are true
-                before and after a process activity has been enacted or a product
-                produced. For example, before architectural design begins, a
-                pre-condition may be that all requirements have been approved by
-                the customer; after this activity is finished, a post-condition
-                might be that the UML models describing the architecture have been
-                reviewed.
-                </li>
+              <li>
+                <strong>Products</strong>, which are the outcomes of a process
+                activity. For example, the outcome of the activity of
+                architectural design may be a model of the software
+                architecture.
+              </li>
+              <li>
+                <strong>Roles</strong>, which reflect the responsibilities of
+                the people involved in the process. Examples of roles are
+                project manager, configuration manager, programmer, etc.
+              </li>
+              <li>
+                <strong>Pre- and post-conditions</strong>, which are statements
+                that are true before and after a process activity has been
+                enacted or a product produced. For example, before architectural
+                design begins, a pre-condition may be that all requirements have
+                been approved by the customer; after this activity is finished,
+                a post-condition might be that the UML models describing the
+                architecture have been reviewed.
+              </li>
             </ol>
-
           </div>
-            
 
           <p class="paragraph">
             Software processes are complex and, like all intellectual and
@@ -192,9 +210,7 @@
           id="part2"
           class="bg-ivory-500 scroll-mt-68 mt-10 md:scroll-mt-60 lg:scroll-mt-55 parts"
         >
-          <h2 class="Topic">
-            SOFTWARE PROCESS MODEL
-          </h2>
+          <h2 class="Topic">SOFTWARE PROCESS MODEL</h2>
 
           <p class="paragraph">
             As I explained in Chapter 1, a software process model is a
@@ -220,44 +236,44 @@
           <div class="ollist">
             <p class="paragraph">The process models that I cover here are:</p>
 
-          <ol class="ol">
-            <li>
-              The <strong>waterfall model</strong> This takes the fundamental process activities
-              of specification, development, validation, and evolution and
-              represents them as separate process phases such as requirements
-              specification, software design, implementation, testing, and so
-              on.
-            </li>
+            <ol class="ol">
+              <li>
+                The <strong>waterfall model</strong> This takes the fundamental
+                process activities of specification, development, validation,
+                and evolution and represents them as separate process phases
+                such as requirements specification, software design,
+                implementation, testing, and so on.
+              </li>
 
-            <figure class="figure">
-              <img
-                src="Pictures/waterfall.png"
-                alt="The Waterfall model"
-                height="300px"
-                class="mx-auto"
-              />
-              <figcaption class="text-center mt-2">
-                Figure 1. The Waterfall model
-              </figcaption>
-            </figure>
+              <figure class="figure">
+                <img
+                  src="Pictures/waterfall.png"
+                  alt="The Waterfall model"
+                  height="300px"
+                  class="mx-auto"
+                />
+                <figcaption class="text-center mt-2">
+                  Figure 1. The Waterfall model
+                </figcaption>
+              </figure>
 
-            <li>
-              <strong>Incremental development</strong> This approach interleaves the activities
-              of specification, development, and validation. The system is
-              developed as a series of versions (increments), with each version
-              adding functionality to the previous version.
-            </li>
+              <li>
+                <strong>Incremental development</strong> This approach
+                interleaves the activities of specification, development, and
+                validation. The system is developed as a series of versions
+                (increments), with each version adding functionality to the
+                previous version.
+              </li>
 
-            <li>
-              <strong>Reuse-oriented software engineering </strong>This approach is based on the
-              existence of a significant number of reusable components. The
-              system development process focuses on integrating these components
-              into a system rather than developing them from scratch.
-            </li>
-          </ol>
-
+              <li>
+                <strong>Reuse-oriented software engineering </strong>This
+                approach is based on the existence of a significant number of
+                reusable components. The system development process focuses on
+                integrating these components into a system rather than
+                developing them from scratch.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             These models are not mutually exclusive and are often used together,
@@ -275,7 +291,7 @@
           </p>
 
           <h2 class="subtopic">The waterfall model</h2>
-          
+
           <p class="paragraph">
             The first published model of the software development process was
             derived from more general system engineering processes (Royce,
@@ -288,43 +304,46 @@
 
           <div class="ollist">
             <p class="paragraph">
-            The principal stages of the waterfall model directly reflect the
-            fundamental development activities:
-          </p>
+              The principal stages of the waterfall model directly reflect the
+              fundamental development activities:
+            </p>
             <ol class="ol">
-            <li>
-              <strong>Requirements analysis and definition</strong> The system’s services,
-              constraints, and goals are established by consultation with system
-              users. They are then defined in detail and serve as a system
-              specification.
-            </li>
-            <li>
-              <strong>System and software design</strong> The systems design process allocates
-              the requirements to either hardware or software systems by
-              establishing an overall system architecture. Software design
-              involves identifying and describing the fundamental software
-              system abstractions and their relationships.
-            </li>
-            <li>
-              <strong>Implementation and unit</strong> testing During this stage, the software
-              design is realized as a set of programs or program units. Unit
-              testing involves verifying that each unit meets its specification.
-            </li>
-            <li>
-              <strong>Integration and system testing</strong> The individual program units or
-              programs are integrated and tested as a complete system to ensure
-              that the software requirements have been met. After testing, the
-              software system is delivered to the customer.
-            </li>
-            <li>
-              <strong>Operation and maintenance</strong> Normally (although not necessarily),
-              this is the longest life cycle phase. The system is installed and
-              put into practical use. Maintenance involves correcting errors
-              which were not discovered in earlier stages of the life cycle,
-              improving the implementation of system units
-            </li>
-          </ol>
-
+              <li>
+                <strong>Requirements analysis and definition</strong> The
+                system’s services, constraints, and goals are established by
+                consultation with system users. They are then defined in detail
+                and serve as a system specification.
+              </li>
+              <li>
+                <strong>System and software design</strong> The systems design
+                process allocates the requirements to either hardware or
+                software systems by establishing an overall system architecture.
+                Software design involves identifying and describing the
+                fundamental software system abstractions and their
+                relationships.
+              </li>
+              <li>
+                <strong>Implementation and unit</strong> testing During this
+                stage, the software design is realized as a set of programs or
+                program units. Unit testing involves verifying that each unit
+                meets its specification.
+              </li>
+              <li>
+                <strong>Integration and system testing</strong> The individual
+                program units or programs are integrated and tested as a
+                complete system to ensure that the software requirements have
+                been met. After testing, the software system is delivered to the
+                customer.
+              </li>
+              <li>
+                <strong>Operation and maintenance</strong> Normally (although
+                not necessarily), this is the longest life cycle phase. The
+                system is installed and put into practical use. Maintenance
+                involves correcting errors which were not discovered in earlier
+                stages of the life cycle, improving the implementation of system
+                units
+              </li>
+            </ol>
           </div>
 
           <p class="paragraph">
@@ -371,13 +390,13 @@
           </figure>
 
           <p class="paragraph">
-            The <strong>waterfall model</strong> is consistent with other engineering process
-            models and documentation is produced at each phase. This makes the
-            process visible so managers can monitor progress against the
-            development plan. Its major problem is the inflexible partitioning
-            of the project into distinct stages. Commitments must be made at an
-            early stage in the process, which makes it difficult to respond to
-            changing customer requirements.
+            The <strong>waterfall model</strong> is consistent with other
+            engineering process models and documentation is produced at each
+            phase. This makes the process visible so managers can monitor
+            progress against the development plan. Its major problem is the
+            inflexible partitioning of the project into distinct stages.
+            Commitments must be made at an early stage in the process, which
+            makes it difficult to respond to changing customer requirements.
           </p>
 
           <p class="paragraph">
@@ -441,14 +460,15 @@
           </figure>
 
           <p class="paragraph">
-            <strong>Incremental software development</strong>, which is a fundamental part of
-            agile approaches, is better than a waterfall approach for most
-            business, e-commerce, and personal systems. Incremental development
-            reflects the way that we solve problems. We rarely work out a
-            complete problem solution in advance but move toward a solution in a
-            series of steps, backtracking when we realize that we have made a
-            mistake. By developing the software incrementally, it is cheaper and
-            easier to make changes in the software as it is being developed.
+            <strong>Incremental software development</strong>, which is a
+            fundamental part of agile approaches, is better than a waterfall
+            approach for most business, e-commerce, and personal systems.
+            Incremental development reflects the way that we solve problems. We
+            rarely work out a complete problem solution in advance but move
+            toward a solution in a series of steps, backtracking when we realize
+            that we have made a mistake. By developing the software
+            incrementally, it is cheaper and easier to make changes in the
+            software as it is being developed.
           </p>
 
           <p class="paragraph">
@@ -462,45 +482,43 @@
             for later increments.
           </p>
 
-          
           <div class="ollist">
             <p class="paragraph">
-            Incremental development has three important benefits, compared to
-            the waterfall model:
-          </p>
+              Incremental development has three important benefits, compared to
+              the waterfall model:
+            </p>
             <ol class="ol">
-            <li>
-              The cost of accommodating changing customer requirements is
-              reduced. The amount of analysis and documentation that has to be
-              redone is much less than is required with the waterfall model.
-            </li>
-            <li>
-              It is easier to get customer feedback on the development work that
-              has been done. Customers can comment on demonstrations of the
-              software and see how much has been implemented. Customers find it
-              difficult to judge progress from software design documents.
-            </li>
-            <li>
-              More rapid delivery and deployment of useful software to the
-              customer is possible, even if all of the functionality has not
-              been included. Customers are able to use and gain value from the
-              software earlier than is possible with a waterfall process.
-            </li>
-          </ol>
+              <li>
+                The cost of accommodating changing customer requirements is
+                reduced. The amount of analysis and documentation that has to be
+                redone is much less than is required with the waterfall model.
+              </li>
+              <li>
+                It is easier to get customer feedback on the development work
+                that has been done. Customers can comment on demonstrations of
+                the software and see how much has been implemented. Customers
+                find it difficult to judge progress from software design
+                documents.
+              </li>
+              <li>
+                More rapid delivery and deployment of useful software to the
+                customer is possible, even if all of the functionality has not
+                been included. Customers are able to use and gain value from the
+                software earlier than is possible with a waterfall process.
+              </li>
+            </ol>
 
-          <figure class="figure">
-            <img
-              class="mx-auto"
-              src="Pictures/Problem.png"
-              alt=""
-              height="300px"
-            />
-          </figure>
-
+            <figure class="figure">
+              <img
+                class="mx-auto"
+                src="Pictures/Problem.png"
+                alt=""
+                height="300px"
+              />
+            </figure>
           </div>
-          
-        
-          <p class="paragraph">  
+
+          <p class="paragraph">
             Incremental development in some form is now the most common approach
             for the development of application systems. This approach can be
             either plan-driven, agile, or, more usually, a mixture of these
@@ -510,27 +528,26 @@
             depends on progress and customer priorities.
           </p>
 
-
           <div class="ollist">
-             <p class="paragraph">
-            From a management perspective, the incremental approach has two
-            problems:
-          </p>
+            <p class="paragraph">
+              From a management perspective, the incremental approach has two
+              problems:
+            </p>
             <ol class="ol">
-            <li>
-              The process is not visible. Managers need regular deliverables to
-              measure progress. If systems are developed quickly, it is not
-              cost-effective to produce documents that reflect every version of
-              the system.
-            </li>
-            <li>
-              System structure tends to degrade as new increments are added.
-              Unless time and money is spent on refactoring to improve the
-              software, regular change tends to corrupt its structure.
-              Incorporating further software changes becomes increasingly
-              difficult and costly.
-            </li>
-          </ol>
+              <li>
+                The process is not visible. Managers need regular deliverables
+                to measure progress. If systems are developed quickly, it is not
+                cost-effective to produce documents that reflect every version
+                of the system.
+              </li>
+              <li>
+                System structure tends to degrade as new increments are added.
+                Unless time and money is spent on refactoring to improve the
+                software, regular change tends to corrupt its structure.
+                Incorporating further software changes becomes increasingly
+                difficult and costly.
+              </li>
+            </ol>
           </div>
 
           <p class="paragraph">
@@ -584,69 +601,69 @@
             processing or a spreadsheet.
           </p>
 
+          <div class="ollist">
+            <p class="paragraph">
+              A general process model for reuse-based development is shown in
+              Figure 2.3. Although the initial requirements specification stage
+              and the validation stage are comparable with other software
+              processes, the intermediate stages in a reuseoriented process are
+              different. These stages are:
+            </p>
+            <ol class="ol">
+              <li>
+                <strong>Component analysis</strong> Given the requirements
+                specification, a search is made for components to implement that
+                specification. Usually, there is no exact match and the
+                components that may be used only provide some of the
+                functionality required.
+              </li>
+              <li>
+                <strong>Requirements modification</strong> During this stage,
+                the requirements are analyzed using information about the
+                components that have been discovered. They are then modified to
+                reflect the available components. Where modifications are
+                impossible, the component analysis activity may be re-entered to
+                search for alternative solutions.
+              </li>
+              <li>
+                <strong> System design with reuse During this phase</strong>,
+                the framework of the system is designed or an existing framework
+                is reused. The designers take into account the components that
+                are reused and organize the framework to cater for this. Some
+                new software may have to be designed if reusable components are
+                not available.
+              </li>
+              <li>
+                <strong>Development and integration</strong> Software that
+                cannot be externally procured is developed, and the components
+                and COTS systems are integrated to create the new system. System
+                integration, in this model, may be part of the development
+                process rather than a separate activity.
+              </li>
+            </ol>
+          </div>
 
           <div class="ollist">
             <p class="paragraph">
-            A general process model for reuse-based development is shown in
-            Figure 2.3. Although the initial requirements specification stage
-            and the validation stage are comparable with other software
-            processes, the intermediate stages in a reuseoriented process are
-            different. These stages are:
-          </p>
+              There are three types of software component that may be used in a
+              reuse-oriented process:
+            </p>
             <ol class="ol">
-            <li>
-              <strong>Component analysis</strong> Given the requirements specification, a search
-              is made for components to implement that specification. Usually,
-              there is no exact match and the components that may be used only
-              provide some of the functionality required.
-            </li>
-            <li>
-              <strong>Requirements modification</strong> During this stage, the requirements are
-              analyzed using information about the components that have been
-              discovered. They are then modified to reflect the available
-              components. Where modifications are impossible, the component
-              analysis activity may be re-entered to search for alternative
-              solutions.
-            </li>
-            <li>
-             <strong> System design with reuse During this phase</strong>, the framework of the
-              system is designed or an existing framework is reused. The
-              designers take into account the components that are reused and
-              organize the framework to cater for this. Some new software may
-              have to be designed if reusable components are not available.
-            </li>
-            <li>
-              <strong>Development and integration</strong> Software that cannot be externally
-              procured is developed, and the components and COTS systems are
-              integrated to create the new system. System integration, in this
-              model, may be part of the development process rather than a
-              separate activity.
-            </li>
-          </ol>
+              <li>
+                Web services that are developed according to service standards
+                and which are available for remote invocation.
+              </li>
+              <li>
+                Collections of objects that are developed as a package to be
+                integrated with a component framework such as .NET or J2EE.
+              </li>
+              <li>
+                Stand-alone software systems that are configured for use in a
+                particular environment.
+              </li>
+            </ol>
           </div>
-        
 
-          <div class="ollist">
-            <p class="paragraph">
-            There are three types of software component that may be used in a
-            reuse-oriented process:
-          </p>
-            <ol class="ol">
-            <li>
-              Web services that are developed according to service standards and
-              which are available for remote invocation.
-            </li>
-            <li>
-              Collections of objects that are developed as a package to be
-              integrated with a component framework such as .NET or J2EE.
-            </li>
-            <li>
-              Stand-alone software systems that are configured for use in a
-              particular environment.
-            </li>
-          </ol>
-          </div>
-          
           <p class="paragraph">
             Reuse-oriented software engineering has the obvious advantage of
             reducing the amount of software to be developed and so reducing cost
@@ -671,9 +688,7 @@
           id="part3"
           class="bg-ivory-500 scroll-mt-68 mt-10 md:scroll-mt-60 lg:scroll-mt-55 parts"
         >
-          <h2 class="Topic">
-            PROCESS ACTIVITIES
-          </h2>
+          <h2 class="Topic">PROCESS ACTIVITIES</h2>
 
           <p class="paragraph">
             Real software processes are interleaved sequences of technical,
@@ -729,47 +744,47 @@
 
           <div class="ollist">
             <p class="paragraph">
-            There are four main activities in the requirements engineering
-            process:
-          </p>
+              There are four main activities in the requirements engineering
+              process:
+            </p>
             <ol class="ol">
-            <li>
-              <strong>Feasibility study</strong> An estimate is made of whether the identified
-              user needs may be satisfied using current software and hardware
-              technologies. The study considers whether the proposed system will
-              be cost-effective from a business point of view and if it can be
-              developed within existing budgetary constraints. A feasibility
-              study should be relatively cheap and quick. The result should
-              inform the decision of whether or not to go ahead with a more
-              detailed analysis.
-            </li>
-            <li>
-              <strong>Requirements elicitation and analysis</strong> This is the process of
-              deriving the system requirements through observation of existing
-              systems, discussions with potential users and procurers, task
-              analysis, and so on. This may involve the development of one or
-              more system models and prototypes. These help you understand the
-              system to be specified.
-            </li>
-            <li>
-              <strong> Requirements specification</strong> is the
-              activity of translating the information gathered during the
-              analysis activity into a document that defines a set of
-              requirements. Two types of requirements may be included in this
-              document. User requirements are abstract statements of the system
-              requirements for the customer and end-user of the system; system
-              requirements are a more detailed description of the functionality
-              to be provided.
-            </li>
-            <li>
-              <strong>Requirements validation</strong> This activity checks the requirements for
-              realism, consistency, and completeness. During this process,
-              errors in the requirements document are inevitably discovered. It
-              must then be modified to correct these problems.
-            </li>
-          </ol>
+              <li>
+                <strong>Feasibility study</strong> An estimate is made of
+                whether the identified user needs may be satisfied using current
+                software and hardware technologies. The study considers whether
+                the proposed system will be cost-effective from a business point
+                of view and if it can be developed within existing budgetary
+                constraints. A feasibility study should be relatively cheap and
+                quick. The result should inform the decision of whether or not
+                to go ahead with a more detailed analysis.
+              </li>
+              <li>
+                <strong>Requirements elicitation and analysis</strong> This is
+                the process of deriving the system requirements through
+                observation of existing systems, discussions with potential
+                users and procurers, task analysis, and so on. This may involve
+                the development of one or more system models and prototypes.
+                These help you understand the system to be specified.
+              </li>
+              <li>
+                <strong> Requirements specification</strong> is the activity of
+                translating the information gathered during the analysis
+                activity into a document that defines a set of requirements. Two
+                types of requirements may be included in this document. User
+                requirements are abstract statements of the system requirements
+                for the customer and end-user of the system; system requirements
+                are a more detailed description of the functionality to be
+                provided.
+              </li>
+              <li>
+                <strong>Requirements validation</strong> This activity checks
+                the requirements for realism, consistency, and completeness.
+                During this process, errors in the requirements document are
+                inevitably discovered. It must then be modified to correct these
+                problems.
+              </li>
+            </ol>
           </div>
-          
 
           <figure class="figure">
             <img class="mx-auto" src="Pictures/fea.png" alt="" />
@@ -778,7 +793,7 @@
             </figcaption>
           </figure>
 
-          <p class="paragraph">  
+          <p class="paragraph">
             Of course, the activities in the requirements process are not simply
             carried out in a strict sequence. Requirements analysis continues
             during definition and specification and new requirements come to
@@ -847,50 +862,50 @@
 
           <div class="ollist">
             <p class="paragraph">
-            The activities in the design process vary, depending on the type of
-            system being developed. For example, real-time systems require
-            timing design but may not include a database so there is no database
-            design involved. Figure 2.5 shows four activities that may be part
-            of the design process for information systems:
-          </p>
+              The activities in the design process vary, depending on the type
+              of system being developed. For example, real-time systems require
+              timing design but may not include a database so there is no
+              database design involved. Figure 2.5 shows four activities that
+              may be part of the design process for information systems:
+            </p>
             <ol class="ol">
-            <li>
-              <strong>Architectural design</strong>, where you identify the overall structure of
-              the system, the principal components (sometimes called sub-systems
-              or modules), their relationships, and how they are distributed.
-            </li>
-            <li>
-              <strong>Interface design</strong>, where you define the interfaces between system
-              components. This interface specification must be unambiguous. With
-              a precise interface, a component can be used without other
-              components having to know how it is implemented. Once interface
-              specifications are agreed, the components can be designed and
-              developed concurrently.
-            </li>
+              <li>
+                <strong>Architectural design</strong>, where you identify the
+                overall structure of the system, the principal components
+                (sometimes called sub-systems or modules), their relationships,
+                and how they are distributed.
+              </li>
+              <li>
+                <strong>Interface design</strong>, where you define the
+                interfaces between system components. This interface
+                specification must be unambiguous. With a precise interface, a
+                component can be used without other components having to know
+                how it is implemented. Once interface specifications are agreed,
+                the components can be designed and developed concurrently.
+              </li>
 
-            <figure class="figure">
-              <img class="mx-auto" src="Pictures/structure.png" alt="" />
-            </figure>
+              <figure class="figure">
+                <img class="mx-auto" src="Pictures/structure.png" alt="" />
+              </figure>
 
-            <li>
-              <strong>Component design</strong>, where you take each system component and design
-              how it will operate. This may be a simple statement of the
-              expected functionality to be implemented, with the specific design
-              left to the programmer. Alternatively, it may be a list of changes
-              to be made to a reusable component or a detailed design model. The
-              design model may be used to automatically generate an
-              implementation.
-            </li>
+              <li>
+                <strong>Component design</strong>, where you take each system
+                component and design how it will operate. This may be a simple
+                statement of the expected functionality to be implemented, with
+                the specific design left to the programmer. Alternatively, it
+                may be a list of changes to be made to a reusable component or a
+                detailed design model. The design model may be used to
+                automatically generate an implementation.
+              </li>
 
-            <li>
-              <strong>Database design</strong>, where you design the system data structures and
-              how these are to be represented in a database. Again, the work
-              here depends on whether an existing database is to be reused or a
-              new database is to be created.
-            </li>
-          </ol>
+              <li>
+                <strong>Database design</strong>, where you design the system
+                data structures and how these are to be represented in a
+                database. Again, the work here depends on whether an existing
+                database is to be reused or a new database is to be created.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             These activities lead to a set of design outputs, which are also
@@ -995,46 +1010,45 @@
             back from later stages to earlier parts of the process.
           </p>
 
-
           <div class="ollist">
             <p class="paragraph">The stages in the testing process are:</p>
             <ol class="ol">
-            <li>
-              <strong>Development testing </strong> The components making up the system are tested
-              by the people developing the system. Each component is tested
-              independently, without other system components. Components may be
-              simple entities such as functions or object classes, or may be
-              coherent groupings of these entities. Test automation tools, such
-              as JUnit (Massol and Husted, 2003), that can re-run component
-              tests when new versions of the component are created, are commonly
-              used.
-            </li>
-            <li>
-              <strong>System testing System components</strong> are integrated to create a
-              complete system. This process is concerned with finding errors
-              that result from unanticipated interactions between components and
-              component interface problems. It is also concerned with showing
-              that the system meets its functional and non-functional
-              requirements, and testing the emergent system properties. For
-              large systems, this may be a multi-stage process where components
-              are integrated to form subsystems that are individually tested
-              before these sub-systems are themselves integrated to form the
-              final system.
-            </li>
-            <li>
-              <strong>Acceptance testing</strong> This is the final stage in the testing process
-              before the system is accepted for operational use. The system is
-              tested with data supplied by the system customer rather than with
-              simulated test data. Acceptance testing may reveal errors and
-              omissions in the system requirements definition, because the real
-              data exercise the system in different ways from the test data.
-              Acceptance testing may also reveal requirements problems where the
-              system’s facilities do not really meet the user’s needs or the
-              system performance is unacceptable.
-            </li>
-          </ol>
+              <li>
+                <strong>Development testing </strong> The components making up
+                the system are tested by the people developing the system. Each
+                component is tested independently, without other system
+                components. Components may be simple entities such as functions
+                or object classes, or may be coherent groupings of these
+                entities. Test automation tools, such as JUnit (Massol and
+                Husted, 2003), that can re-run component tests when new versions
+                of the component are created, are commonly used.
+              </li>
+              <li>
+                <strong>System testing System components</strong> are integrated
+                to create a complete system. This process is concerned with
+                finding errors that result from unanticipated interactions
+                between components and component interface problems. It is also
+                concerned with showing that the system meets its functional and
+                non-functional requirements, and testing the emergent system
+                properties. For large systems, this may be a multi-stage process
+                where components are integrated to form subsystems that are
+                individually tested before these sub-systems are themselves
+                integrated to form the final system.
+              </li>
+              <li>
+                <strong>Acceptance testing</strong> This is the final stage in
+                the testing process before the system is accepted for
+                operational use. The system is tested with data supplied by the
+                system customer rather than with simulated test data. Acceptance
+                testing may reveal errors and omissions in the system
+                requirements definition, because the real data exercise the
+                system in different ways from the test data. Acceptance testing
+                may also reveal requirements problems where the system’s
+                facilities do not really meet the user’s needs or the system
+                performance is unacceptable.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             Normally, component development and testing processes are
@@ -1128,9 +1142,7 @@
           id="part4"
           class="bg-ivory-500 scroll-mt-68 mt-10 md:scroll-mt-60 lg:scroll-mt-55 parts"
         >
-          <h2 class="Topic">
-            COPING WITH CHANGE
-          </h2>
+          <h2 class="Topic">COPING WITH CHANGE</h2>
 
           <p class="paragraph">
             Change is inevitable in all large software projects. The system
@@ -1162,57 +1174,58 @@
 
           <div class="ollist">
             <p class="paragraph">
-            There are two related approaches that may be used to reduce the
-            costs of rework:
-          </p>
+              There are two related approaches that may be used to reduce the
+              costs of rework:
+            </p>
 
-          <ol class="ol">
-            <li>
-              <strong>Change avoidance</strong>, where the software process includes activities
-              that can anticipate possible changes before significant rework is
-              required. For example, a prototype system may be developed to show
-              some key features of the system to customers. They can experiment
-              with the prototype and refine their requirements before committing
-              to high software production costs.
-            </li>
-            <li>
-              <strong>Change tolerance</strong>, where the process is designed so that changes
-              can be accommodated at relatively low cost. This normally involves
-              some form of incremental development. Proposed changes may be
-              implemented in increments that have not yet been developed. If
-              this is impossible, then only a single increment (a small part of
-              the system) may have to be altered to incorporate the change.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                <strong>Change avoidance</strong>, where the software process
+                includes activities that can anticipate possible changes before
+                significant rework is required. For example, a prototype system
+                may be developed to show some key features of the system to
+                customers. They can experiment with the prototype and refine
+                their requirements before committing to high software production
+                costs.
+              </li>
+              <li>
+                <strong>Change tolerance</strong>, where the process is designed
+                so that changes can be accommodated at relatively low cost. This
+                normally involves some form of incremental development. Proposed
+                changes may be implemented in increments that have not yet been
+                developed. If this is impossible, then only a single increment
+                (a small part of the system) may have to be altered to
+                incorporate the change.
+              </li>
+            </ol>
           </div>
 
-          
           <div class="ollist">
             <p class="paragraph">
-            In this section, I discuss two ways of coping with change and
-            changing system requirements. These are:
-          </p>
+              In this section, I discuss two ways of coping with change and
+              changing system requirements. These are:
+            </p>
 
-          <ol class="ol">
-            <li>
-              <strong>System prototyping</strong>, where a version of the system or part of the
-              system is developed quickly to check the customer’s requirements
-              and the feasibility of some design decisions. This supports change
-              avoidance as it allows users to experiment with the system before
-              delivery and so refine their requirements. The number of
-              requirements change proposals made after delivery is therefore
-              likely to be reduced.
-            </li>
-            <li>
-              <strong>Incremental delivery</strong>, where system increments are delivered to the
-              customer for comment and experimentation. This supports both
-              change avoidance and change tolerance. It avoids the premature
-              commitment to requirements for the whole system and allows changes
-              to be incorporated into later increments at relatively low cost.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                <strong>System prototyping</strong>, where a version of the
+                system or part of the system is developed quickly to check the
+                customer’s requirements and the feasibility of some design
+                decisions. This supports change avoidance as it allows users to
+                experiment with the system before delivery and so refine their
+                requirements. The number of requirements change proposals made
+                after delivery is therefore likely to be reduced.
+              </li>
+              <li>
+                <strong>Incremental delivery</strong>, where system increments
+                are delivered to the customer for comment and experimentation.
+                This supports both change avoidance and change tolerance. It
+                avoids the premature commitment to requirements for the whole
+                system and allows changes to be incorporated into later
+                increments at relatively low cost.
+              </li>
+            </ol>
           </div>
-          
 
           <figure class="figure">
             <img class="mx-auto" src="Pictures/prototype.png" alt="" />
@@ -1234,23 +1247,23 @@
 
           <div class="ollist">
             <p class="paragraph">
-            A software prototype can be used in a software development process
-            to help anticipate changes that may be required:
-          </p>
+              A software prototype can be used in a software development process
+              to help anticipate changes that may be required:
+            </p>
 
-          <ol class="ol">
-            <li>
-              In the <strong>requirements engineering process</strong>, a prototype can help with
-              the elicitation and validation of system requirements.
-            </li>
-            <li>
-              In the <strong>system design process</strong>, a prototype can be used to explore
-              particular software solutions and to support user interface
-              design.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                In the <strong>requirements engineering process</strong>, a
+                prototype can help with the elicitation and validation of system
+                requirements.
+              </li>
+              <li>
+                In the <strong>system design process</strong>, a prototype can
+                be used to explore particular software solutions and to support
+                user interface design.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             System prototypes allow users to see how well the system supports
@@ -1321,35 +1334,36 @@
 
           <div class="ollist">
             <p class="paragraph">
-            Developers are sometimes pressured by managers to deliver throwaway
-            prototypes, particularly when there are delays in delivering the
-            final version of the software. However, this is usually unwise:
-          </p>
+              Developers are sometimes pressured by managers to deliver
+              throwaway prototypes, particularly when there are delays in
+              delivering the final version of the software. However, this is
+              usually unwise:
+            </p>
 
-          <ol class="ol">
-            <li>
-              It may be impossible to tune the prototype to meet non-functional
-              requirements, such as performance, security, robustness, and
-              reliability requirements, which were ignored during prototype
-              development.
-            </li>
-            <li>
-              Rapid change during development inevitably means that the
-              prototype is undocumented. The only design specification is the
-              prototype code. This is not good enough for long-term maintenance.
-            </li>
-            <li>
-              The changes made during prototype development will probably have
-              degraded the system structure. The system will be difficult and
-              expensive to maintain
-            </li>
-            <li>
-              Organizational quality standards are normally relaxed for
-              prototype development.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                It may be impossible to tune the prototype to meet
+                non-functional requirements, such as performance, security,
+                robustness, and reliability requirements, which were ignored
+                during prototype development.
+              </li>
+              <li>
+                Rapid change during development inevitably means that the
+                prototype is undocumented. The only design specification is the
+                prototype code. This is not good enough for long-term
+                maintenance.
+              </li>
+              <li>
+                The changes made during prototype development will probably have
+                degraded the system structure. The system will be difficult and
+                expensive to maintain
+              </li>
+              <li>
+                Organizational quality standards are normally relaxed for
+                prototype development.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             Prototypes do not have to be executable to be useful. Paper-based
@@ -1401,70 +1415,71 @@
 
           <div class="ollist">
             <p class="paragraph">
-            Incremental delivery has a number of advantages:
-          </p>
+              Incremental delivery has a number of advantages:
+            </p>
 
-          <ol class="ol">
-            <li>
-              Customers can use the early increments as prototypes and gain
-              experience that informs their requirements for later system
-              increments. Unlike prototypes, these are part of the real system
-              so there is no re-learning when the complete system is available.
-            </li>
-            <li>
-              Customers do not have to wait until the entire system is delivered
-              before they can gain value from it. The first increment satisfies
-              their most critical requirements so they can use the software
-              immediately.
-            </li>
-            <li>
-              The process maintains the benefits of incremental development in
-              that it should be relatively easy to incorporate changes into the
-              system.
-            </li>
-            <li>
-              As the highest-priority services are delivered first and
-              increments then integrated, the most important system services
-              receive the most testing. This means that customers are less
-              likely to encounter software failures in the most important parts
-              of the system.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                Customers can use the early increments as prototypes and gain
+                experience that informs their requirements for later system
+                increments. Unlike prototypes, these are part of the real system
+                so there is no re-learning when the complete system is
+                available.
+              </li>
+              <li>
+                Customers do not have to wait until the entire system is
+                delivered before they can gain value from it. The first
+                increment satisfies their most critical requirements so they can
+                use the software immediately.
+              </li>
+              <li>
+                The process maintains the benefits of incremental development in
+                that it should be relatively easy to incorporate changes into
+                the system.
+              </li>
+              <li>
+                As the highest-priority services are delivered first and
+                increments then integrated, the most important system services
+                receive the most testing. This means that customers are less
+                likely to encounter software failures in the most important
+                parts of the system.
+              </li>
+            </ol>
           </div>
-          
+
           <div class="ollist">
-             <p class="paragraph">
-            However, there are problems with incremental delivery:
-          </p>
+            <p class="paragraph">
+              However, there are problems with incremental delivery:
+            </p>
 
-          <ol class="ol">
-            <li>
-              Most systems require a set of basic facilities that are used by
-              different parts of the system. As requirements are not defined in
-              detail until an increment is to be implemented, it can be hard to
-              identify common facilities that are needed by all increments.
-            </li>
-            <li>
-              <strong>Iterative development</strong> can also be difficult when a replacement
-              system is being developed. Users want all of the functionality of
-              the old system and are often unwilling to experiment with an
-              incomplete new system. Therefore, getting useful customer feedback
-              is difficult.
-            </li>
-            <li>
-              The essence of <strong>iterative processes</strong> is that the specification is
-              developed in conjunction with the software. However, this
-              conflicts with the procurement model of many organizations, where
-              the complete system specification is part of the system
-              development contract. In the incremental approach, there is no
-              complete system specification until the final increment is
-              specified. This requires a new form of contract, which large
-              customers such as government agencies may find difficult to
-              accommodate.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                Most systems require a set of basic facilities that are used by
+                different parts of the system. As requirements are not defined
+                in detail until an increment is to be implemented, it can be
+                hard to identify common facilities that are needed by all
+                increments.
+              </li>
+              <li>
+                <strong>Iterative development</strong> can also be difficult
+                when a replacement system is being developed. Users want all of
+                the functionality of the old system and are often unwilling to
+                experiment with an incomplete new system. Therefore, getting
+                useful customer feedback is difficult.
+              </li>
+              <li>
+                The essence of <strong>iterative processes</strong> is that the
+                specification is developed in conjunction with the software.
+                However, this conflicts with the procurement model of many
+                organizations, where the complete system specification is part
+                of the system development contract. In the incremental approach,
+                there is no complete system specification until the final
+                increment is specified. This requires a new form of contract,
+                which large customers such as government agencies may find
+                difficult to accommodate.
+              </li>
+            </ol>
           </div>
-         
 
           <p class="paragraph">
             There are some types of system where incremental development and
@@ -1511,42 +1526,42 @@
 
           <div class="ollist">
             <p class="paragraph">
-            Each loop in the spiral is split into four sectors:
-          </p>
+              Each loop in the spiral is split into four sectors:
+            </p>
 
-          <ol class="ol">
-            <li>
-              <strong>Objective setting</strong> Specific objectives for that phase of the
-              project are defined. Constraints on the process and the product
-              are identified and a detailed management plan is drawn up. Project
-              risks are identified. Alternative strategies, depending on these
-              risks, may be planned.
-            </li>
-            <li>
-              <strong>Risk assessment and reduction</strong> For each of the identified project
-              risks, a detailed analysis is carried out. Steps are taken to
-              reduce the risk. For example, if there is a risk that the
-              requirements are inappropriate, a prototype system may be
-              developed.
-            </li>
-            <li>
-              <strong>Development and validation After risk evaluation</strong>, a development
-              model for the system is chosen. For example, throwaway prototyping
-              may be the best development approach if user interface risks are
-              dominant. If safety risks are the main consideration, development
-              based on formal transformations may be the most appropriate
-              process, and so on. If the main identified risk is sub-system
-              integration, the waterfall model may be the best development model
-              to use.
-            </li>
-            <li>
-             <strong> Planning</strong> The project is reviewed and a decision made whether to
-              continue with a further loop of the spiral. If it is decided to
-              continue, plans are drawn up for the next phase of the project.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                <strong>Objective setting</strong> Specific objectives for that
+                phase of the project are defined. Constraints on the process and
+                the product are identified and a detailed management plan is
+                drawn up. Project risks are identified. Alternative strategies,
+                depending on these risks, may be planned.
+              </li>
+              <li>
+                <strong>Risk assessment and reduction</strong> For each of the
+                identified project risks, a detailed analysis is carried out.
+                Steps are taken to reduce the risk. For example, if there is a
+                risk that the requirements are inappropriate, a prototype system
+                may be developed.
+              </li>
+              <li>
+                <strong>Development and validation After risk evaluation</strong
+                >, a development model for the system is chosen. For example,
+                throwaway prototyping may be the best development approach if
+                user interface risks are dominant. If safety risks are the main
+                consideration, development based on formal transformations may
+                be the most appropriate process, and so on. If the main
+                identified risk is sub-system integration, the waterfall model
+                may be the best development model to use.
+              </li>
+              <li>
+                <strong> Planning</strong> The project is reviewed and a
+                decision made whether to continue with a further loop of the
+                spiral. If it is decided to continue, plans are drawn up for the
+                next phase of the project.
+              </li>
+            </ol>
           </div>
-          
 
           <p class="paragraph">
             The main difference between the spiral model and other software
@@ -1578,9 +1593,7 @@
           id="part5"
           class="bg-ivory-500 scroll-mt-68 mt-10 md:scroll-mt-60 lg:scroll-mt-55 parts"
         >
-          <h2 class="Topic">
-            THE RATIONAL UNIFIED PROCESS
-          </h2>
+          <h2 class="Topic">THE RATIONAL UNIFIED PROCESS</h2>
 
           <p class="paragraph">
             The Rational Unified Process (RUP) (Krutchen, 2003) is an example of
@@ -1596,32 +1609,36 @@
 
           <div class="ollist">
             <p class="paragraph">
-            The RUP recognizes that conventional process models present a single
-            view of the process. In contrast, the RUP is normally described from
-            three perspectives:
+              The RUP recognizes that conventional process models present a
+              single view of the process. In contrast, the RUP is normally
+              described from three perspectives:
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 ol">
-
               <div class="listcontainer">
-                <h1 class="borde p-5"> A <strong>dynamic perspective</strong></h1>
-                <p class="paragraph">Shows the phases of the model over
-              time.</p>
-              </div>
-              
-              <div class="listcontainer">
-                <h1 class="borde p-5"> A <strong>static perspective</strong></h1>
-                <p class="paragraph"> Shows the process activities that are
-              enacted.</p>
+                <h1 class="borde p-5">
+                  A <strong>dynamic perspective</strong>
+                </h1>
+                <p class="paragraph">
+                  Shows the phases of the model over time.
+                </p>
               </div>
 
               <div class="listcontainer">
-                <h1 class="borde p-5">A <strong>practice perspective</strong></h1>
-                <p class="paragraph"> Suggests good practices to be used
-              during the process.</p>
+                <h1 class="borde p-5">A <strong>static perspective</strong></h1>
+                <p class="paragraph">
+                  Shows the process activities that are enacted.
+                </p>
               </div>
 
-
+              <div class="listcontainer">
+                <h1 class="borde p-5">
+                  A <strong>practice perspective</strong>
+                </h1>
+                <p class="paragraph">
+                  Suggests good practices to be used during the process.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -1647,48 +1664,50 @@
           </figure>
 
           <div class="ollist">
-             <p class="paragraph">
-            Figure 2.11 shows the phases in the RUP. These are:
-          </p>
+            <p class="paragraph">
+              Figure 2.11 shows the phases in the RUP. These are:
+            </p>
 
-          <ol class="ol">
-            <li>
-              <strong>Inception</strong> The goal of the inception phase is to establish a
-              business case for the system. You should identify all external
-              entities (people and systems) that will interact with the system
-              and define these interactions. You then use this information to
-              assess the contribution that the system makes to the business. If
-              this contribution is minor, then the project may be cancelled
-              after this phase.
-            </li>
-            <li>
-              <strong>Elaboration </strong> The goals of the elaboration phase are to develop an
-              understanding of the problem domain, establish an architectural
-              framework for the system, develop the project plan, and identify
-              key project risks. On completion of this phase you should have a
-              requirements model for the system, which may be a set of UML
-              use-cases, an architectural description, and a development plan
-              for the software.
-            </li>
-            <li>
-              <strong>Construction</strong> The construction phase involves system design,
-              programming, and testing. Parts of the system are developed in
-              parallel and integrated during this phase. On completion of this
-              phase, you should have a working software system and associated
-              documentation that is ready for delivery to users.
-            </li>
-            <li>
-              <strong>Transition</strong> The final phase of the RUP is concerned with moving the
-              system from the development community to the user community and
-              making it work in a real environment. This is something that is
-              ignored in most software process models but is, in fact, an
-              expensive and sometimes problematic activity. On completion of
-              this phase, you should have a documented software system that is
-              working correctly in its operational environment.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                <strong>Inception</strong> The goal of the inception phase is to
+                establish a business case for the system. You should identify
+                all external entities (people and systems) that will interact
+                with the system and define these interactions. You then use this
+                information to assess the contribution that the system makes to
+                the business. If this contribution is minor, then the project
+                may be cancelled after this phase.
+              </li>
+              <li>
+                <strong>Elaboration </strong> The goals of the elaboration phase
+                are to develop an understanding of the problem domain, establish
+                an architectural framework for the system, develop the project
+                plan, and identify key project risks. On completion of this
+                phase you should have a requirements model for the system, which
+                may be a set of UML use-cases, an architectural description, and
+                a development plan for the software.
+              </li>
+              <li>
+                <strong>Construction</strong> The construction phase involves
+                system design, programming, and testing. Parts of the system are
+                developed in parallel and integrated during this phase. On
+                completion of this phase, you should have a working software
+                system and associated documentation that is ready for delivery
+                to users.
+              </li>
+              <li>
+                <strong>Transition</strong> The final phase of the RUP is
+                concerned with moving the system from the development community
+                to the user community and making it work in a real environment.
+                This is something that is ignored in most software process
+                models but is, in fact, an expensive and sometimes problematic
+                activity. On completion of this phase, you should have a
+                documented software system that is working correctly in its
+                operational environment.
+              </li>
+            </ol>
           </div>
-         
+
           <p class="paragraph">
             Iteration within the RUP is supported in two ways. Each phase may be
             enacted in an iterative way with the results developed
@@ -1727,43 +1746,45 @@
 
           <div class="ollist">
             <p class="paragraph">
-            The practice perspective on the RUP describes good software
-            engineering practices that are recommended for use in systems
-            development. Six fundamental best practices are recommended:
-          </p>
+              The practice perspective on the RUP describes good software
+              engineering practices that are recommended for use in systems
+              development. Six fundamental best practices are recommended:
+            </p>
 
-          <ol class="ol">
-            <li>
-              <strong>Develop software iteratively Plan</strong> increments of the system based
-              on customer priorities and develop the highest-priority system
-              features early in the development process.
-            </li>
-            <li>
-              <strong>Manage requirements Explicitly</strong> document the customer’s
-              requirements and keep track of changes to these requirements.
-              Analyze the impact of changes on the system before accepting them.
-            </li>
-            <li>
-              Use <strong>component-based architectures</strong> Structure the system
-              architecture into components, as discussed earlier in this
-              chapter.
-            </li>
-            <li>
-              <strong>Visually model</strong> software Use graphical UML models to present static
-              and dynamic views of the software.
-            </li>
-            <li>
-              <strong>Verify software</strong> quality Ensure that the software meets the
-              organizational quality standards.
-            </li>
-            <li>
-              <strong>Control changes to software</strong> Manage changes to the software using a
-              change management system and configuration management procedures
-              and tools.
-            </li>
-          </ol>
+            <ol class="ol">
+              <li>
+                <strong>Develop software iteratively Plan</strong> increments of
+                the system based on customer priorities and develop the
+                highest-priority system features early in the development
+                process.
+              </li>
+              <li>
+                <strong>Manage requirements Explicitly</strong> document the
+                customer’s requirements and keep track of changes to these
+                requirements. Analyze the impact of changes on the system before
+                accepting them.
+              </li>
+              <li>
+                Use <strong>component-based architectures</strong> Structure the
+                system architecture into components, as discussed earlier in
+                this chapter.
+              </li>
+              <li>
+                <strong>Visually model</strong> software Use graphical UML
+                models to present static and dynamic views of the software.
+              </li>
+              <li>
+                <strong>Verify software</strong> quality Ensure that the
+                software meets the organizational quality standards.
+              </li>
+              <li>
+                <strong>Control changes to software</strong> Manage changes to
+                the software using a change management system and configuration
+                management procedures and tools.
+              </li>
+            </ol>
           </div>
-          
+
           <p class="paragraph">
             The RUP is not a suitable process for all types of development,
             e.g., embedded software development. However, it does represent an
@@ -1781,64 +1802,75 @@
     </main>
 
     <footer class="">
-      
       <section class="footerSection1">
-
-      <section class=" flex-col gap-3 hidden md:hidden lg:block xl:block">
-        <img src="Pictures/Lheader.png" alt="" class="w-35 h-35 rounded shadow-md  mx-auto">
-        <h1 class="text-3xl font-bold text-black mt-3">SOFTWARE ENGINEERING</h1>
-      </section>
-
-      <article class="flex flex-col gap-2">
-        <h1 class="text-xl bold italic">Chapter 2</h1>
-        <h1>SOFTWARE PROCESS</h1>
-        <a id="Terms">Terms of Use</a>
-        <a id="Terms">Privacy Policy</a>
-      </article>
-
-      <article class="flex flex-col gap-2">
-        <h3 class="text-xl italic">Contents</h3>
-        <a class="font-bold text-blue-700" href="#part1">Introduction</a>
-        <a class="font-bold text-blue-700" href="#part2">Software process model</a>
-        <a class="font-bold text-blue-700" href="#part3">Process activities</a>
-        <a class="font-bold text-blue-700" href="#part4">Coping with change</a>
-        <a class="font-bold text-blue-700" href="#part5">The Rational Unified Process</a>
-      </article>
-
-      <article>
-        <h1>Follow us on:</h1>
-        <div class="flex flex-col gap-5 items-center">
-    <!-- Twitter -->
-    <a
-      href="https://twitter.com/yourprofile"
-      target="_blank"
-      class="text-slate-600 hover:text-blue-500 transition"
-    > <img src="Pictures/twitter.png" alt="" width="25px" height="25px">
-    </a>
-    <!-- IG -->
-    <a
-      href="https://linkedin.com/in/yourprofile"
-      target="_blank"
-      class="text-slate-600 hover:text-blue-700 transition"
-    > <img src="Pictures/IG.png" alt="" width="25px" height="25px">
-    </a>
-
-    <!-- Facebook -->
-    <a
-      href="https://facebook.com/yourprofile"
-      target="_blank"
-      class="text-slate-600 hover:text-blue-600 transition"
-    > <img src="Pictures/Fb.png" alt="" width="25px" height="25px">
-    </a>
-  </div>
-      </article>
-
-      </section>
-
-        <section class="p-5 text-center border-t bg-black text-white">
-          <h3>Copyright reserved</h3>
-          <h5>Develop by: Jaycee Hernandez</h5>
+        <section class="flex-col gap-3 hidden md:hidden lg:block xl:block">
+          <img
+            src="Pictures/Lheader.png"
+            alt=""
+            class="w-35 h-35 rounded shadow-md mx-auto"
+          />
+          <h1 class="text-3xl font-bold text-black mt-3">
+            SOFTWARE ENGINEERING
+          </h1>
         </section>
+
+        <article class="flex flex-col gap-2">
+          <h1 class="text-xl bold italic">Chapter 2</h1>
+          <h1>SOFTWARE PROCESS</h1>
+          <a id="Terms">Terms of Use</a>
+          <a id="Terms">Privacy Policy</a>
+        </article>
+
+        <article class="flex flex-col gap-2">
+          <h3 class="text-xl italic">Contents</h3>
+          <a class="font-bold text-blue-700" href="#part1">Introduction</a>
+          <a class="font-bold text-blue-700" href="#part2"
+            >Software process model</a
+          >
+          <a class="font-bold text-blue-700" href="#part3"
+            >Process activities</a
+          >
+          <a class="font-bold text-blue-700" href="#part4"
+            >Coping with change</a
+          >
+          <a class="font-bold text-blue-700" href="#part5"
+            >The Rational Unified Process</a
+          >
+        </article>
+
+        <article>
+          <h1>Follow us on:</h1>
+          <div class="flex flex-col gap-5 items-center">
+            <!-- Twitter -->
+            <a
+              href="https://x.com/jycee_h"
+              class="text-slate-600 hover:text-blue-500 transition"
+            >
+              <img src="Pictures/twitter.png" width="25px" height="25px" />
+            </a>
+            <!-- IG -->
+            <a
+              href="https://www.instagram.com/jychrnndz/"
+              class="text-slate-600 hover:text-blue-700 transition"
+            >
+              <img src="Pictures/IG.png" alt="" width="25px" height="25px" />
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/Jaycee.zednanreh/"
+              class="text-slate-600 hover:text-blue-600 transition"
+            >
+              <img src="Pictures/Fb.png" alt="" width="25px" height="25px" />
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="p-5 text-center border-t bg-black text-white">
+        <h3>Copyright reserved</h3>
+        <h5>Develop by: Jaycee Hernandez</h5>
+      </section>
     </footer>
   </body>
 </html>
