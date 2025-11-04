@@ -6,31 +6,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>chapter21</title>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#0C2B4E] ">
 
-<!-- <header class=" bg-[#E1D0B3] fixed flex-2 w-full">
-    <h1 class="mb-5 mt-6 md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center font-serif">
-        Chapter 21: Aspect-oriented software engineering
-    </h1>
 
-    <nav class="bg-gray-900 text-white p-4 flex flex-wrap justify-center space-x-4 mt-3.5 shadow-black shadow-2xl">
-
-        <a href="#concepts" class="hover:text-yellow-400">Key Concepts</a>
-        <a href="#aspects" class="hover:text-yellow-400">Aspects & Concerns</a>
-        <a href="#weaving" class="hover:text-yellow-400">Weaving Process</a>
-        <a href="#architecture" class="hover:text-yellow-400">AOSE Architecture</a>
-        <a href="#advantages" class="hover:text-yellow-400">Advantages</a>
-        <a href="#applications" class="hover:text-yellow-400">Applications</a>
-        <a href="#conclusion" class="hover:text-yellow-400">Conclusion</a>
-        <a href="#Top" class="hover:text-yellow-400">Top</a>
-        <a href="#Bottom" class="hover:text-yellow-400">Bottom</a>
-    </nav>
-</header> -->
-    <!-- <header
-      id="#Top"
-      class="fixed top-0 left-0 w-full bg-white shadow-md text-center p-3 from-slate-500 to-slate-300"
-    > -->
     <header class=" bg-gradient-to-b from-blue-400 to-blue-100  fixed flex-2 w-full">
     <h1 class="mb-5 mt-6 md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center font-serif">
         Chapter 21:
@@ -60,7 +42,7 @@
     
     <main class=" pt-10 xl:pt-43 md:pt-40 lg:pt-40">
 
-<section class = "sec1">
+<section class = "sec1 roboto-mono ">
                 <p>
                     In most large systems, the relationships between the requirements and the program
                         components are complex. A single requirement may be implemented by a number of
@@ -74,7 +56,7 @@
                 </p>
                 </section>
 
-<section class = "sec">
+<section class = "sec roboto-mono">
                 <p>
                     Aspect-oriented software engineering (AOSE) is an approach to software development that is intended to address this problem and so make programs easier to
                         maintain and reuse. AOSE is based around abstractions called aspects, which
@@ -93,7 +75,7 @@
 
                 </section>
 
-<section id="advantages" class = "sec">
+<section id="advantages" class = "sec roboto-mono">
                 <p>
                     An important characteristic of aspects is that they include a definition of where
                         they should be included in a program, as well as the code implementing the crosscutting concern. You can specify that the cross-cutting code should be included
@@ -117,7 +99,7 @@
                         introduce accidental security vulnerabilities into your program
                 </p>
         </section>
-        <section class = "sec ">
+        <section class = "sec roboto-mono">
                
                 <p>
                     Research and development in aspect-orientation has primarily focused on aspectoriented programming. Aspect-oriented programming languages such as AspectJ
@@ -142,7 +124,7 @@
                 </p>
                 
             </section>
-<section id="concepts" class = "sec">
+<section id="concepts" class = "sec roboto-mono">
                
             <h2>21.1 The separation of concerns</h2>
                         <p>The separation of concerns is a key principle of software design and implementation.
@@ -161,7 +143,7 @@
 
                 </section>
 
-               <section class = "sec">
+               <section class = "sec roboto-mono">
                 
                         <p>Although it is generally agreed that separating concerns is good             software        engineering practice, it is harder to pin down what is         actually meant by a concern. Sometimes
                             it is defined as a functional notion (i.e., a concern is some element of functionality in
@@ -183,7 +165,7 @@
                             requirements change, then the part of the program that has to be changed is obvious.
                 </section>
 
-                <section class = "sec ">
+                <section class = "sec roboto-mono">
                
                     <h4>There are several different types of stakeholder concern</h4>
                         <ul>
@@ -201,7 +183,7 @@
                             <li>Organizational concerns, which are related to organizational goals and priorities. These include producing a system within budget, making use of existing
                                 software assets, and maintaining the reputation of the organization</li>
 
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img1.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -212,7 +194,7 @@
 
                     </section>
 
-                 <section class = "sec">
+                 <section class = "sec roboto-mono">
                
                     <p>A data acquisition system involves a producer and consumer process putting data in a shared buffer, with the main function being to add and remove elements. Synchronization is crucial to prevent interference between processes, ensuring that neither overwrites un consumed data nor takes data from empty buffers.</p>
                     <p>Secondary concerns, such as service quality and organizational policies, are cross-cutting concerns that apply to the entire system, while secondary functional concerns may be cross-cutting but are associated with core concerns providing related functionality.</p>
@@ -222,7 +204,7 @@
                         system. However, the implementation of the core concerns in conventional programming languages usually includes additional code to implement the cross-cutting,
                         functional, quality of service, and policy concerns. This leads to two undesirable
                         phenomena: tangling and scattering</p>
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img2.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -232,7 +214,7 @@
                             code</h4>
                     </section>
 
-             <section class = "sec">
+             <section class = "sec roboto-mono">
                      <p>Tangling occurs when a system module includes code that implements different system requirements. In a bounded buffer system, the put operation adds an item to the buffer, while the get operation removes it. The code supporting the primary concern is tangled with code implementing synchronization, which ensures mutual exclusion and must be included in all methods accessing the shared buffer.</p>
                     <p>The related phenomenon of scattering occurs when the implementation of a single concern (a logical requirement or set of requirements) is scattered across several
                         components in a program. This is likely to occur when requirements related to secondary functional concerns or policy concerns are implemented.</p>
@@ -251,9 +233,9 @@
                     </p>
                 </section>
 
-          <section class = "sec">
+          <section class = "sec roboto-mono">
                
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img3.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -266,7 +248,7 @@
                         assume that all components in the system use a consistent naming strategy and that
                         all database updates are implemented by methods starting with ‘update’. There are
                         therefore methods in the system such as:</p>
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img4.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -278,12 +260,12 @@
 
                 </section>
 
-<section class = "sec">
+<section class = "sec roboto-mono">
                
     <p>One way of implementing this new policy is to modify the update method in each
                         component to call other methods to do the authentication and logging. Alternatively,</p>
                 
-                                 <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                 <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img5.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -296,7 +278,7 @@
                 
                     </section>
 
-               <section class = " sec">
+               <section class = " sec roboto-mono">
                         <ol>
                             <li>The first approach leads to a tangled implementation. Logically, updating a
                                     database, authenticating the originator of an update, and logging details of the
@@ -321,9 +303,9 @@
                     </section>
                     
 
-<section id="aspects" class = "sec ">
+<section id="aspects" class = "sec roboto-mono ">
                        <p>In this example, the pointcut is a simple statement:</p>
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img6.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -351,7 +333,7 @@
                         
                 </section>
 
-        <section class = " sec">
+        <section class = " sec roboto-mono">
                             <p>A pointcut identifies the specific event(s) (e.g., a call to a named procedure) with
                             which advice should be associated. This means that you can weave advice into a program in many different contexts, depending on the join point model that is supported:
                             </p>
@@ -362,7 +344,7 @@
                                         named methods, or a list of methods whose names match a pattern specification
                                         (such as update).
                                     </li>
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img7.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -378,7 +360,7 @@
                             
                 </section>
 
-<section id="weaving" class = "sec ">
+<section id="weaving" class = "sec roboto-mono">
                          <p>The inclusion of advice at the join points specified in the pointcuts is the responsibility of an aspect weaver. Aspect weavers are extensions to compilers that process
                             the definition of aspects and the object classes and methods that define the system.
                             The weaver then generates a new program with the aspects included at the specified
@@ -391,7 +373,7 @@
                                 at the right places in the final system.</p>
             </section>
 
-            <section class = " sec">
+            <section class = " sec roboto-mono">
                
                         
                             <ol>
@@ -415,7 +397,7 @@
                             stages of the system development process</p>
                         </section>
 
-<section id="architecture" class = " sec ">
+<section id="architecture" class = " sec roboto-mono">
                       <p>
                         When designing a system, Jacobson and Ng (2004) suggest that you should think of
                         a system that supports different stakeholder concerns as a core system plus extensions.
@@ -433,7 +415,7 @@
                         types of concern that I discussed in Section 21.1.</p>
             </section>
 
-        <section class = " sec ">
+        <section class = " sec roboto-mono">
                               <ol>
                                 <li>Secondary functional extensions These add additional capabilities to the functionality provided in the core system. For instance, using the example of the MHCPMS, the production of reports on the drugs prescribed in the previous month
                                 would be a secondary functional extension to a patient information system.
@@ -455,7 +437,7 @@
 
                             </ol>
                         
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img8.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -465,7 +447,7 @@
                                          core system. Aspects are a way to implement these extensions and they can be composed with the core system functionality using the weaving facilities in the aspectoriented programming environment.</p>
                 </section>
 
-<section id="applications" class = "sec">
+<section id="applications" class = "sec roboto-mono">
                      <h2> Concern-oriented requirements engineering</h2>
 
                         <p>As I suggested in Section 21.1, concerns reflect the requirements of stakeholders.
@@ -484,7 +466,7 @@
                             </p>
                     </section>
 
-            <section class = "sec">
+            <section class = "sec roboto-mono">
                
                         
                         <p>However, there are also requirements which cross-cut all viewpoints, as shown
@@ -498,7 +480,7 @@
                         <p>To develop a system that is organized in the style shown in Figure 21.7, you
                             should identify requirements for the core system plus the requirements for the system extensions. A viewpoint-oriented approach to requirements engineering, where
                             each viewpoint represents the requirements of related groups of stakeholders, is one</p>
-                                 <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                 <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img9.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -514,12 +496,12 @@
 
                 </section>
 
-            <section class = "sec">
+            <section class = "sec roboto-mono">
                     <p>In the equipment inventory system, an example of a cross-cutting concern is system
                         availability. Emergencies may happen with little or no warning. Saving lives may
                         require essential equipment to be deployed as quickly as possible. Therefore, the
                         </p>
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img10.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -535,18 +517,18 @@
                                     </p>
                             </section>
 
-             <section class = " sec">
+             <section class = " sec roboto-mono">
                              <ol>
                     <li>C.1 The system shall allow authorized users to view the description of any item of
                                                 equipment in the emergency services inventory</li>
-                                  <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                  <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img11.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
                                                     <h4>Figure 21.10</h4>
                                                         <p>Availability-related requirements for the equipment inventory system</p>
         
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img12.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
@@ -566,11 +548,11 @@
                                     </ol>
                                     </section>
 
-                <section class = "sec ">
+                <section class = "sec roboto-mono">
                     <p>Aspect-oriented design is the process of designing a system that makes use of aspects to implement the cross-cutting concerns and extensions that are identified during the requirements engineering process. At this stage, you need to translate the concerns that relate to the problem to be solved to corresponding aspects in the program that is implementing the solution. You also need to understand how these aspects will be composed with other system components and ensure that composition ambiguities do not arise.</p>
                                     <p>The high-level statement of requirements provides a basis for identifying some system extensions that may be implemented as aspects. You then need to develop these in more detail to identify further extensions and to understand the functionality that is required. One way to do this is to identify a set of use cases, (discussed in Chapters 4 and 5) associated with each viewpoint. Use case models are interactionfocused and more detailed than the user requirements. You can think of them as a bridge between the requirements and the design. In a use case model, you describe the steps of each user interaction and so start to identify and define the classes in the system.</p>
                                 
-                                 <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                 <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img13.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>                                 
@@ -579,23 +561,23 @@
                                     <p>The UML already includes the notion of extension use cases. An extension use case extends the functionality of another use case. Figure 21.12 shows how the placing of an equipment order extends the core use case for adding equipment to a specific store. If the equipment to be added does not exist, it can be ordered and added to the store when the equipment is delivered. During the development of use case models, you should look for common features and, where possible, structure the use cases as core cases plus extensions. Cross-cutting features, such as the logging of all transactions, can also be represented as extension use cases.</p>
                                     <p>Jacobsen and Ng discuss how extensions of this type can be implemented as aspects.</p>
 
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img14.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
 
                                 </section>
 
-            <section class = " sec ">
+            <section class = " sec roboto-mono">
                                      
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img15.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
                                     <p>Developing an effective process for aspect-oriented design is essential if aspect-oriented design is to be accepted and used. I suggest that an aspect-oriented design process should include the activities shown in Figure 21.13. These activities are:</p>
                                 </section>
 
-                 <section class = " sec ">
+                 <section class = " sec roboto-mono">
                                     <ul>
                                         <li>Core system design – At this stage, you design the system architecture to support the core functionality of the system. The architecture must also take into account quality of service requirements such as performance and dependability requirements.</li>
                                         <li>Aspect identification and design – Starting with the extensions identified in the system requirements, you should analyze these to see if they are aspects in themselves or if they should be broken down into several aspects. Once aspects have been identified, these can then be separately designed, taking into account the design of the core system features.</li>
@@ -604,13 +586,13 @@
                                         <li>Name design – This is an important design activity that defines standards for naming entities in the program. This is essential to avoid the problem of accidental pointcuts. These occur when, at some program join point, the name accidentally matches that in a pointcut pattern. The advice is therefore unintentionally applied at that point. Obviously this is undesirable and can lead to unexpected program behavior. Therefore, you should design a naming scheme that minimizes the likelihood of this happening.</li>
                                     </ul>
                                 
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img16.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
              </section>
 
-            <section class = " sec">
+            <section class = " sec roboto-mono">
                 <p>This process is, naturally, an iterative process in which you make initial design proposals then refine them as you analyze and understand the design issues. Normally, you would expect to refine the extensions identified in the requirements to a larger number of aspects.</p>
                          <p>The outcome of the aspect-oriented design process is an aspect-oriented design model. This may be expressed in an extended version of the UML which includes new, aspect-specific constructs such as those proposed by Clarke and Baniassad (2005) and Jacobson and Ng (2004). The essential elements of ‘aspect UML’ are a means of modeling aspects and of specifying the join points at which the aspect advice should be composed with the core system.</p>
                             <p>Figure 21.14 is an example of an aspect-oriented design model. I have used the UML stereotype for an aspect proposed by Jacobson and Ng. Figure 21.14 shows the core system for an emergency services inventory plus some aspects that might be composed with that core. I have shown some core system classes and some aspects. This is a simplified picture; a complete model would include more classes and aspects. Notice how I have used UML notes to provide additional information about the classes that are cross-cut by some aspects.</p>
@@ -618,14 +600,14 @@
                             <p>The first section of the aspect sets out the pointcuts that specify where it will be composed with the core system. For example, the first pointcut specifies that the aspect may be composed at the call getItemInfo (..) join point. The following section defines the extensions that are implemented by the aspect. In the example here, the extension statement can be read as:</p>
                             <p>“In the method viewItem, after the call to the method getItemInfo, a call to the method displayHistory should be included to display the maintenance record.”</p>
 
-                                <section class="flex justify-center items-center bg-[#F5E5E1]">
+                                <section class="flex justify-center items-center bg-gradient-to-tr from-slate-500 to-zinc-50">
                                     <img src="pot/img17.png" alt=""
                                         class=" mt-2 rounded-2xl shadow-lg" />
                                     </section>
 
                     </section>
 
-<section id="conclusion" class = " sec">
+<section id="conclusion" class = " sec roboto-mono">
                
                             <p>Aspect-oriented programming (AOP) started at Xerox’s PARC laboratories in 1997, with the development of the AspectJ programming language. This remains the most widely used aspect-oriented language, although aspect-oriented extensions of other languages, such as C# and C++, have also been implemented. Other experimental languages have also been developed to support the explicit separation of concerns and concern composition and there are experimental implementations of AOP in the .NET framework. Aspect-oriented programming is covered extensively in other books (Colyer et al., 2005; Gradecki and Lezeiki, 2003; Laddad, 2003b).</p>
                         <p>If you have followed an aspect-oriented approach to designing your system, you will already have identified the core functionality and the extensions to that functionality to be implemented as cross-cutting aspects. The focus of the programming process should then be to write code implementing the core and extension functionality and, critically, to specify the pointcuts in the aspects so that the aspect advice is woven into the base code at the correct places.</p>
@@ -637,7 +619,7 @@
                         <p>A general guideline for program understandability is that a reader should be able to read a program from left to right, top to bottom without having to switch attention to other parts of the code. This makes it easier for readers and also makes it less likely that programmers will make mistakes as their attention is focused on a single section of code. Improving program readability was a key reason for the introduction of structured programming (Dijkstra et al., 1972) and the elimination of unconditional branch (go-to) statements from high-level programming languages.</p>
                     </section>
 
-<section class = " sec">
+<section class = " sec roboto-mono">
                
                         <p>In an aspect-oriented system, sequential code reading is impossible. The reader has to examine each aspect, understand its pointcuts (which may be patterns), and the join point model of the aspect-oriented language. When reading the program, he or she then has to identify every potential join point and switch attention to the aspect code to see if it may be woven at that point. Their attention then returns to the main flow of control of the base code. In reality, this is cognitively impossible and the only possible way to inspect an aspect-oriented program is through the use of code-reading tools.</p>
                                     <p>Code-reading tools can be written that ‘flatten’ an aspect-oriented program and present a program to the reader with the aspects ‘woven’ into the program at the specified join points. However, this is not a complete solution to the code-reading problem. The join point model in an aspect-oriented programming language may be dynamic rather than static and it may be impossible to demonstrate that the flattened program will behave in exactly the same way as the program that will execute.</p>
@@ -648,7 +630,7 @@
                                     <li>How can knowledge of the program code be used to systematically derive program tests?</li>
                                     <li>What exactly does test coverage mean?</li>
                                 </section>
-<section  class="sec ">
+<section  class="sec roboto-mono">
                
                             
                                     <p>To design tests in a structured program (e.g., tests of the code of a method) without unconditional branches, you can derive a program flow graph, which reveals every logical execution path through that program. You then examine the code and, for each path through the flow graph, choose input values that will cause that path to be executed.</p>
@@ -660,7 +642,7 @@
                                     <p>As well as problems with inspections and white-box testing, Katz (2005) identified additional problems in testing aspect-oriented programs:</p>
                                 </section>
 
-<section class = " sec ">               
+<section class = " sec roboto-mono">               
                                     
                                     <ul>
                                                     <li>How should aspects be specified so that tests for these aspects may be derived?</li>
