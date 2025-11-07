@@ -1,14 +1,12 @@
 @import "tailwindcss";
 
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
 
-/* Add font to Tailwind's theme system (Tailwind v4 syntax) */
 @theme {
   --font-roboto-mono: "Roboto Mono", monospace;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 /* Landing page */
 
@@ -33,10 +31,6 @@
 }
 
 /* Jaycee src */
-
-.nav {
-  @apply bg-gradient-to-b from-blue-50 font-[Bitcoint_Grid_Single] w-full mt-2 gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
-}
 
 .link {
   @apply text-black font-normal
@@ -92,7 +86,7 @@
 }
 
 .sec{
-  @apply shadow-black shadow-lg text-center  p-3 ml-4 mr-4 md:m-10 lg:ml-24 
+  @apply shadow-black shadow-lg text-center  p-3 ml-4 mr-4 md:m-10 lg:ml-24
   lg:mr-24 xl:ml-40 xl:pr-35 rounded-2xl  bg-gradient-to-tr from-slate-500 to-zinc-50 text-base  sm:pb-10 mb-9 mt-10
 }
 

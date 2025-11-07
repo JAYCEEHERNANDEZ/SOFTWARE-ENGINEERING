@@ -293,9 +293,6 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
   }
@@ -389,9 +386,6 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
-  }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -607,11 +601,6 @@
   .italic {
     font-style: italic;
   }
-  .shadow-xl\/60 {
-    --tw-shadow-alpha: 60%;
-    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -623,12 +612,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[\#87f5ff\] {
-    --tw-shadow-color: #87f5ff;
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, #87f5ff var(--tw-shadow-alpha), transparent);
-    }
   }
   .shadow-black {
     --tw-shadow-color: #000;
@@ -937,7 +920,6 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .Lheader {
   display: flex;
   gap: calc(var(--spacing) * 5);
@@ -1028,48 +1010,6 @@
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-black);
-}
-.nav {
-  margin-top: calc(var(--spacing) * 2);
-  width: 100%;
-  gap: calc(var(--spacing) * 5);
-  --tw-gradient-position: to bottom in oklab;
-  background-image: linear-gradient(var(--tw-gradient-stops));
-  --tw-gradient-from: var(--color-blue-50);
-  --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  padding-top: calc(var(--spacing) * 1);
-  padding-right: calc(var(--spacing) * 16);
-  padding-left: calc(var(--spacing) * 16);
-  font-family: Bitcoint Grid Single;
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
-  @media (width >= 48rem) {
-    gap: calc(var(--spacing) * 5);
-  }
-  @media (width >= 48rem) {
-    padding-right: calc(var(--spacing) * 6);
-  }
-  @media (width >= 48rem) {
-    padding-left: calc(var(--spacing) * 6);
-  }
-  @media (width >= 48rem) {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  @media (width >= 64rem) {
-    gap: calc(var(--spacing) * 3);
-  }
-  @media (width >= 64rem) {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-  @media (width >= 80rem) {
-    gap: calc(var(--spacing) * 18);
-  }
-  @media (width >= 80rem) {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
 }
 .link {
   border-style: var(--tw-border-style);
