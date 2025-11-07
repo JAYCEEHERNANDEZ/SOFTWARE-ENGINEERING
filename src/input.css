@@ -35,11 +35,11 @@
 /* Jaycee src */
 
 .nav {
-  @apply bg-gradient-to-b from-blue-50 font-[Bitcoint_Grid_Single] w-full mt-2 flex justify-center gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
+  @apply bg-gradient-to-b from-blue-50 font-[Bitcoint_Grid_Single] w-full mt-2 gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
 }
 
 .link {
-  @apply text-black rounded-xl p-2 font-normal
+  @apply text-black font-normal
         hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
 }
 
@@ -123,10 +123,6 @@
 }
 
 /* Jaycee src */
-
-.nav {
-  @apply bg-gradient-to-b from-blue-50 font-[Bitcoint_Grid_Single] w-full mt-2 flex justify-center gap-5 text-sm pt-1 pl-16 pr-16 md:text-lg md:pl-6 md:pr-6 md:gap-5 lg:gap-3 lg:text-lg xl:gap-18 xl:text-lg;
-}
 
 .link {
   @apply text-black rounded-xl p-2 font-normal
