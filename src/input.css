@@ -174,19 +174,21 @@
 /* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
 
 .article{
-  @apply bg-white/20 text-left sm:mr-4 ml-4 lg:mr-4 ml-4 mt-5 mb-5 p-10 rounded-lg;
+  @apply bg-white/20 text-left sm:mr-4 ml-4 lg:mr-4 ml-4 mt-5 mb-5 p-2 rounded-lg;
 }
 
 .Li{
-  @apply list-disc ml-2 mb-2 text-base md:mr-7 lg:text-lg;
+  @apply list-disc ml-2 mb-2 text-base md:mr-5 lg:text-lg rounded-lg hover:scale-101 transition-all duration-300 hover:underline
 }
-
+.Li_num{
+  @apply list-decimal ml-2 mb-2 text-base md:mr-5 lg:text-lg rounded-lg hover:scale-101 transition-all duration-300 hover:underline
+}
 .pgraph{
-  @apply text-base/8 text-sm/8 indent-8 md:mr-7 ml-3 mt-5 lg:text-xl ml-10 mr-10 mt-5 text-justify;
+  @apply text-base/8 indent-8 md:mr-5 ml-2 mt-5 lg:text-lg ml-5 mr-5 mt-5 text-justify rounded-lg hover:scale-101 transition-all duration-300 hover:bg-black/18;
 }
 
 .bullet{
-  @apply text-base/8 md:mr-7 ml-3 mt-5 lg:text-xl ml-17 mr-10 mt-5 text-justify;
+  @apply text-base/8 md:mr-5 ml-2 mt-5 lg:text-xl ml-12 mr-5 mt-5 text-justify;
 }
 
 .aboutheading{
@@ -201,3 +203,6 @@
   @apply  italic text-sm md:text-lg lg:text-lg xl:text-lg text-center mt-3;
 }
 
+.imgfig{
+  @apply mx-auto mt-10 mb-10 rounded-lg shadow-xl/60 transition-all duration-300 ease-in-out hover:scale-105;
+}
