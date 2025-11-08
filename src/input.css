@@ -16,15 +16,14 @@
 }
 
 .Lmainsection {
-  @apply max-w-350 mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20;
+  @apply  mx-auto p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-x-20;
 }
 
 .Lsection {
-  @apply bg-white/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 border border-transparent transition-all duration-300;
+  @apply bg-white/20 p-6 rounded-2xl text-center shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-blue-500 duration-300;
 }
-
 .LH {
-  @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800 transition-colors;
+  @apply text-lg font-semibold text-black mb-2 group-hover:text-blue-800;
 }
 
 .Lparagraph {
