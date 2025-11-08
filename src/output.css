@@ -277,9 +277,6 @@
   .mt-47 {
     margin-top: calc(var(--spacing) * 47);
   }
-  .mt-50 {
-    margin-top: calc(var(--spacing) * 50);
-  }
   .mt-55 {
     margin-top: calc(var(--spacing) * 55);
   }
